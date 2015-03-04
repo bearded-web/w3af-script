@@ -1,0 +1,85 @@
+{
+	"ImportPath": "github.com/bearded-web/w3af-script",
+	"GoVersion": "go1.4.1",
+	"Packages": [
+		"./main.go"
+	],
+	"Deps": [
+		{
+			"ImportPath": "code.google.com/p/go.net/context",
+			"Comment": "null-240",
+			"Rev": "937a34c9de13c766c814510f76bca091dee06028"
+		},
+		{
+			"ImportPath": "github.com/Sirupsen/logrus",
+			"Comment": "v0.6.4-16-g38a6ff9",
+			"Rev": "38a6ff9215d472ce953bb9aa37b5327715c0f940"
+		},
+		{
+			"ImportPath": "github.com/bearded-web/bearded/models/file",
+			"Rev": "a7514d0764ab7db6904e38a727f58d7e10ec12d7"
+		},
+		{
+			"ImportPath": "github.com/bearded-web/bearded/models/plan",
+			"Rev": "a7514d0764ab7db6904e38a727f58d7e10ec12d7"
+		},
+		{
+			"ImportPath": "github.com/bearded-web/bearded/models/report",
+			"Rev": "a7514d0764ab7db6904e38a727f58d7e10ec12d7"
+		},
+		{
+			"ImportPath": "github.com/bearded-web/bearded/models/target",
+			"Rev": "a7514d0764ab7db6904e38a727f58d7e10ec12d7"
+		},
+		{
+			"ImportPath": "github.com/bearded-web/bearded/models/tech",
+			"Rev": "a7514d0764ab7db6904e38a727f58d7e10ec12d7"
+		},
+		{
+			"ImportPath": "github.com/bearded-web/bearded/pkg/agent/api",
+			"Rev": "a7514d0764ab7db6904e38a727f58d7e10ec12d7"
+		},
+		{
+			"ImportPath": "github.com/bearded-web/bearded/pkg/pagination",
+			"Rev": "a7514d0764ab7db6904e38a727f58d7e10ec12d7"
+		},
+		{
+			"ImportPath": "github.com/bearded-web/bearded/pkg/script",
+			"Rev": "a7514d0764ab7db6904e38a727f58d7e10ec12d7"
+		},
+		{
+			"ImportPath": "github.com/bearded-web/bearded/pkg/transport",
+			"Rev": "a7514d0764ab7db6904e38a727f58d7e10ec12d7"
+		},
+		{
+			"ImportPath": "github.com/bearded-web/bearded/pkg/utils",
+			"Rev": "a7514d0764ab7db6904e38a727f58d7e10ec12d7"
+		},
+		{
+			"ImportPath": "github.com/davecgh/go-spew/spew",
+			"Rev": "9ed19f9b0c9116d712e32dee78f1704cb9fc5b02"
+		},
+		{
+			"ImportPath": "github.com/facebookgo/stack",
+			"Rev": "6c824be2ba589917fb264589f99aab11b98fea5f"
+		},
+		{
+			"ImportPath": "github.com/facebookgo/stackerr",
+			"Rev": "2b3dd9a9859e213410d0e6e3b26c5f693c5f2964"
+		},
+		{
+			"ImportPath": "github.com/gdamore/mangos",
+			"Comment": "v1.1.0-1-gb7cec85",
+			"Rev": "b7cec85592e9c6126b7ebefacb2444c13649ef39"
+		},
+		{
+			"ImportPath": "github.com/satori/go.uuid",
+			"Rev": "46e1db27972f44c7722f23195ba6a8d2c2f3a0a3"
+		},
+		{
+			"ImportPath": "gopkg.in/mgo.v2/bson",
+			"Comment": "r2015.01.24",
+			"Rev": "c6a7dce14133ccac2dcac3793f1d6e2ef048503a"
+		}
+	]
+}

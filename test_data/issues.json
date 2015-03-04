@@ -1,0 +1,732 @@
+[
+    {
+        "severity": "error",
+        "summary": "Error in w3af execution bla",
+        "desc": "Description"
+    },
+    {
+        "severity": "error",
+        "summary": "Error in w3af execution bla2",
+        "desc": "Description2"
+    },
+    {
+        "severity": "medium",
+        "summary": "Cross site scripting vulnerability",
+        "desc": "A Cross Site Scripting vulnerability was found at: \"http://192.168.1.33:8082/xss/reflect/js3_notags\", using HTTP method GET. The sent data was: \"in=c2zs2%2F%2A\" The modified parameter was \"in\". This vulnerability was found in the request with id 88.",
+        "urls": [{"url": "http://192.168.1.33:8082/xss/reflect/js3_notags"}],
+        "httpTransactions": [
+            {
+                "id": 88,
+                "method": "GET",
+                "request": {
+                    "status": "GET http://192.168.1.33:8082/xss/reflect/js3_notags?in=c2zs2%2F%2A HTTP/1.1",
+                    "header": {
+                        "Accept": ["*/*"],
+                        "Accept-Encoding": ["gzip, deflate"],
+                        "Host": ["192.168.1.33:8082"],
+                        "Referer": ["http://192.168.1.33:8082/"],
+                        "User-Agent": ["Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; w3af.org)"]
+                    }
+                },
+                "response": {
+                    "status": "HTTP/1.1 200 OK",
+                    "header": {
+                        "Content-Length": ["692"],
+                        "Content-Type": ["text/html; charset=utf-8"],
+                        "Date": ["Wed, 25 Feb 2015 20:16:16 GMT"]
+                    },
+                    "body": {
+                        "contentEncoding": "text",
+                        "content": "Cgo8IURPQ1RZUEUgaHRtbD4KPGh0bWw+PGhlYWQ+PHRpdGxlPkphdmFTY3JpcHQgaW5qZWN0aW9uIGluIEpTIGV4ZWN1dGFibGUgY29udGV4dCwgbm8gdGFncyBjaGFyYWN0ZXJzIC0gZXhwbG9pdGFibGUgKGpzLjMpPC90aXRsZT4KCjwvaGVhZD48Ym9keT4KCgogPHNjcmlwdCBsYW5ndWFnZT0iamF2YXNjcmlwdCI+CnZhciBmID0gewogICAgICAgIG5vZGUgOiAnI21lZGlhc3BvcnRzc2NvcmVib2FyZGdyYW5kc2xhbScsCiAgICAgICAgbGVhZ3VlIDogJ25mbCcsCiAgICAgICAgdGVhbSA6ICcnLAogICAgICAgIHJlZnJlc2g6ICcxJywKICAgICAgICBmcmVxdWVuY3k6ICcxNTAwMCcsCiAgICAgICAgZGF0ZTogJycsCiAgICAgICAgd2VlazogJzEnLAogICAgICAgIGJhZDogYzJ6czIvKiwKICAgICAgICBwaGFzZTogJzInLAogICAgICAgIGNvbmY6ICcnLAogICAgICAgIG1heEFnZTogJzEwJywKICAgICAgICBkaXZpc2lvbjogJycsCiAgICAgICAgc2Vhc29uOiAnMjAxNCcsCiAgICAgICAgeGhyUGF0aDogJycKICAgICAgfTsKPC9zY3JpcHQ+CgpIZWxsbyE8QlI+IApUaGlzIHRlc3QgZGVtb25zdHJhdGVzIGV4cGxvaXRhYmxlIEluamVjdGlvbiBpbnRvIEpTIGV4ZWN1dGFibGUgY29udGV4dCwgd2l0aCAmbHQ7IGFuZCAmZ3Q7ICh0YWcgY2hhcmFjdGVycykgZmlsdGVyZWQgb3V0LgoKCjwvYm9keT48L2h0bWw+Cgo="
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "severity": "medium",
+        "summary": "Cross site scripting vulnerability",
+        "desc": "A Cross Site Scripting vulnerability was found at: \"http://192.168.1.33:8082/xss/reflect/js6_sq\", using HTTP method GET. The sent data was: \"in=diqbx%60diqbx\" The modified parameter was \"in\". This vulnerability was found in the request with id 96.",
+        "urls": [{"url": "http://192.168.1.33:8082/xss/reflect/js6_sq"}],
+        "httpTransactions": [
+            {
+                "id": 96,
+                "method": "GET",
+                "request": {
+                    "status": "GET http://192.168.1.33:8082/xss/reflect/js6_sq?in=diqbx%60diqbx HTTP/1.1",
+                    "header": {
+                        "Accept": ["*/*"],
+                        "Accept-Encoding": ["gzip, deflate"],
+                        "Host": ["192.168.1.33:8082"],
+                        "Referer": ["http://192.168.1.33:8082/"],
+                        "User-Agent": ["Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; w3af.org)"]
+                    }
+                },
+                "response": {
+                    "status": "HTTP/1.1 200 OK",
+                    "header": {
+                        "Content-Length": ["411"],
+                        "Content-Type": ["text/html; charset=utf-8"],
+                        "Date": ["Wed, 25 Feb 2015 20:16:17 GMT"]
+                    },
+                    "body": {
+                        "contentEncoding": "text",
+                        "content": "Cgo8IURPQ1RZUEUgaHRtbD4KPGh0bWw+PGhlYWQ+PHRpdGxlPkphdmFTY3JpcHQgYW5kIHNpbmdsZSBxdW90ZSBpbmplY3Rpb24gaW4gSlMgYmxvY2sgKGpzLjYpPC90aXRsZT4KCjwvaGVhZD48Ym9keT4KCgogPHNjcmlwdCBsYW5ndWFnZT0iamF2YXNjcmlwdCI+CnZhciBmID0gewogICAgICAgIGRhdGU6ICcnLAogICAgICAgIHdlZWs6ICcxJywKICAgICAgICBiYWQ6ICdkaXFieGBkaXFieCcsCiAgICAgICAgcGhhc2U6ICcyJywKICAgICAgfTsKPC9zY3JpcHQ+CgpIZWxsbyE8QlI+IApUaGlzIHRlc3QgZGVtb25zdHJhdGVzIGV4cGxvaXRhYmxlIEluamVjdGlvbiBkdWUgdG8gdW5zYWZlIGhhbmRsaW5nIG9mIHNpbmdsZSBxdW90ZXMgaW5zaWRlIG9mIGEgSmF2YXNjcmlwdCBibG9jay4KCgo8L2JvZHk+PC9odG1sPgoK"
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "severity": "medium",
+        "summary": "Cross site scripting vulnerability",
+        "desc": "A Cross Site Scripting vulnerability was found at: \"http://192.168.1.33:8082/xss/reflect/enc2_fp\", using HTTP method GET. The sent data was: \"in=szypc%60szypc\" The modified parameter was \"in\". This vulnerability was found in the request with id 119.",
+        "urls": [{"url": "http://192.168.1.33:8082/xss/reflect/enc2_fp"}],
+        "httpTransactions": [
+            {
+                "id": 119,
+                "method": "GET",
+                "request": {
+                    "status": "GET http://192.168.1.33:8082/xss/reflect/enc2_fp?in=szypc%60szypc HTTP/1.1",
+                    "header": {
+                        "Accept": ["*/*"],
+                        "Accept-Encoding": ["gzip, deflate"],
+                        "Host": ["192.168.1.33:8082"],
+                        "Referer": ["http://192.168.1.33:8082/"],
+                        "User-Agent": ["Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; w3af.org)"]
+                    }
+                },
+                "response": {
+                    "status": "HTTP/1.1 200 OK",
+                    "header": {
+                        "Content-Length": ["374"],
+                        "Content-Type": ["text/html; charset=utf-8"],
+                        "Date": ["Wed, 25 Feb 2015 20:16:18 GMT"]
+                    },
+                    "body": {
+                        "contentEncoding": "text",
+                        "content": "Cgo8IURPQ1RZUEUgaHRtbD4KPGh0bWw+PGhlYWQ+PHRpdGxlPkluamVjdGlvbiBpbiBKYXZhc2NyaXB0IHdpdGggYm90aCBkb3VibGUgcXVvdGVzIGFuZCBiYWNrc2xhc2ggZXNjYXBlZCB3aXRoIGJhY2tzbGFzaCAtIG5vdCBleHBsb2l0YWJsZSAoZW5jLjIpPC90aXRsZT4KCjwvaGVhZD48Ym9keT4KCgogPHNjcmlwdCBsYW5ndWFnZT0iamF2YXNjcmlwdCI+CnZhciBmID0gInN6eXBjYHN6eXBjIjsKPC9zY3JpcHQ+CgpIZWxsbyE8QlI+IApJbmplY3Rpb24gaW4gSmF2YXNjcmlwdCB3aXRoIGJvdGggZG91YmxlIHF1b3RlcyBhbmQgYmFja3NsYXNoIGVzY2FwZWQgd2l0aCBiYWNrc2xhc2ggLSBub3QgZXhwbG9pdGFibGUgLgoKCjwvYm9keT48L2h0bWw+Cgo="
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "severity": "medium",
+        "summary": "Cross site scripting vulnerability",
+        "desc": "A Cross Site Scripting vulnerability was found at: \"http://192.168.1.33:8082/xss/reflect/onmouseover\", using HTTP method GET. The sent data was: \"in=gvapd%22gvapd\" The modified parameter was \"in\". This vulnerability was found in the request with id 154.",
+        "urls": [{"url": "http://192.168.1.33:8082/xss/reflect/onmouseover"}],
+        "httpTransactions": [
+            {
+                "id": 154,
+                "method": "GET",
+                "request": {
+                    "status": "GET http://192.168.1.33:8082/xss/reflect/onmouseover?in=gvapd%22gvapd HTTP/1.1",
+                    "header": {
+                        "Accept": ["*/*"],
+                        "Accept-Encoding": ["gzip, deflate"],
+                        "Host": ["192.168.1.33:8082"],
+                        "Referer": ["http://192.168.1.33:8082/"],
+                        "User-Agent": ["Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; w3af.org)"]
+                    }
+                },
+                "response": {
+                    "status": "HTTP/1.1 200 OK",
+                    "header": {
+                        "Content-Length": ["373"],
+                        "Content-Type": ["text/html; charset=utf-8"],
+                        "Date": ["Wed, 25 Feb 2015 20:16:20 GMT"]
+                    },
+                    "body": {
+                        "contentEncoding": "text",
+                        "content": "Cgo8IURPQ1RZUEUgaHRtbD4KPGh0bWw+PGhlYWQ+PHRpdGxlPlJlZmxlY3RlZCBYU1MgLSBhdHRyaWJ1dGUgaW5qZWN0aW9uIGluIHRhZ3MgKGRxLjIpPC90aXRsZT4KCjwvaGVhZD48Ym9keT4KCgo8SDI+VXBkYXRlIFlvdXIgUHJlZmVyZW5jZXM8L0gyPjxwPgo8Rk9STSBhY3Rpb249Imh0dHA6Ly9mb29iYXIueWFob28uY29tIj4KSG9tZXBhZ2U6IDxpbnB1dCB2YWx1ZT0iZ3ZhcGQiZ3ZhcGQiIG5hbWU9ImhwIiBzaXplPSI0MCI+PEJSPgo8aW5wdXQgdHlwZT0ic3VibWl0IiB2YWx1ZT0iQ2hhbmdlIj48L0ZPUk0+CjxwPjxBIGhyZWY9Imh0dHA6Ly9mb29iYXIueWFob28uY29tIj5Zb3VyIGhvbWVwYWdlPC9BPjxCUj4KCgo8L2JvZHk+PC9odG1sPgoKCg=="
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "severity": "medium",
+        "summary": "Cross site scripting vulnerability",
+        "desc": "A Cross Site Scripting vulnerability was found at: \"http://192.168.1.33:8082/xss/reflect/js4_dq\", using HTTP method GET. The sent data was: \"in=oa6uk%2F%2A\" The modified parameter was \"in\". This vulnerability was found in the request with id 163.",
+        "urls": [{"url": "http://192.168.1.33:8082/xss/reflect/js4_dq"}],
+        "httpTransactions": [
+            {
+                "id": 163,
+                "method": "GET",
+                "request": {
+                    "status": "GET http://192.168.1.33:8082/xss/reflect/js4_dq?in=oa6uk%2F%2A HTTP/1.1",
+                    "header": {
+                        "Accept": ["*/*"],
+                        "Accept-Encoding": ["gzip, deflate"],
+                        "Host": ["192.168.1.33:8082"],
+                        "Referer": ["http://192.168.1.33:8082/"],
+                        "User-Agent": ["Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; w3af.org)"]
+                    }
+                },
+                "response": {
+                    "status": "HTTP/1.1 200 OK",
+                    "header": {
+                        "Content-Length": ["402"],
+                        "Content-Type": ["text/html; charset=utf-8"],
+                        "Date": ["Wed, 25 Feb 2015 20:16:21 GMT"]
+                    },
+                    "body": {
+                        "contentEncoding": "text",
+                        "content": "Cgo8IURPQ1RZUEUgaHRtbD4KPGh0bWw+PGhlYWQ+PHRpdGxlPkphdmFTY3JpcHQgYW5kIGRvdWJsZS1xdW90ZSBpbmplY3Rpb24gaW4gSlMgYmxvY2sgKGpzLjQpPC90aXRsZT4KCjwvaGVhZD48Ym9keT4KCgogPHNjcmlwdCBsYW5ndWFnZT0iamF2YXNjcmlwdCI+CnZhciBmID0gewogICAgICAgIGRhdGU6ICIiLAogICAgICAgIHdlZWs6ICIxIiwKICAgICAgICBiYWQ6ICJvYTZ1ay8qIiwKICAgICAgICBwaGFzZTogIjIiLAogICAgICB9Owo8L3NjcmlwdD4KCkhlbGxvITxCUj4gClRoaXMgdGVzdCBkZW1vbnN0cmF0ZXMgZXhwbG9pdGFibGUgSW5qZWN0aW9uIGR1ZSB0byB1bnNhZmUgaGFuZGxpbmcgb2YgZG91YmxlIHF1b3RlcyBpbnRvIGEgSmF2YXNjcmlwdCBibG9jay4KCgo8L2JvZHk+PC9odG1sPgoK"
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "severity": "medium",
+        "summary": "Cross site scripting vulnerability",
+        "desc": "A Cross Site Scripting vulnerability was found at: \"http://192.168.1.33:8082/xss/reflect/basic\", using HTTP method GET. The sent data was: \"in=\" The modified parameter was \"in\". This vulnerability was found in the request with id 179.",
+        "urls": [{"url": "http://192.168.1.33:8082/xss/reflect/basic"}],
+        "httpTransactions": [
+            {
+                "id": 179,
+                "method": "GET",
+                "request": {
+                    "status": "GET http://192.168.1.33:8082/xss/reflect/basic?in=xbxk7%3C%2F-%3Exbxk7%2F%2Axbxk7%22xbxk7xbxk7%27xbxk7xbxk7%60xbxk7xbxk7%20%3D HTTP/1.1",
+                    "header": {
+                        "Accept": ["*/*"],
+                        "Accept-Encoding": ["gzip, deflate"],
+                        "Host": ["192.168.1.33:8082"],
+                        "Referer": ["http://192.168.1.33:8082/"],
+                        "User-Agent": ["Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; w3af.org)"]
+                    }
+                },
+                "response": {
+                    "status": "HTTP/1.1 200 OK",
+                    "header": {
+                        "Content-Length": ["57"],
+                        "Content-Type": ["text/html; charset=utf-8"],
+                        "Date": ["Wed, 25 Feb 2015 20:16:21 GMT"]
+                    },
+                    "body": {
+                        "contentEncoding": "text",
+                        "content": "eGJ4azc8Ly0+eGJ4azcvKnhieGs3InhieGs3eGJ4azcneGJ4azd4YnhrN2B4YnhrN3hieGs3ID0K"
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "severity": "medium",
+        "summary": "Cross site scripting vulnerability",
+        "desc": "A Cross Site Scripting vulnerability was found at: \"http://192.168.1.33:8082/xss/reflect/oneclick1\", using HTTP method GET. The sent data was: \"in=zivzi%60zivzi\" The modified parameter was \"in\". This vulnerability was found in the request with id 172.",
+        "urls": [{"url": "http://192.168.1.33:8082/xss/reflect/oneclick1"}],
+        "httpTransactions": [
+            {
+                "id": 172,
+                "method": "GET",
+                "request": {
+                    "status": "GET http://192.168.1.33:8082/xss/reflect/oneclick1?in=zivzi%60zivzi HTTP/1.1",
+                    "header": {
+                        "Accept": ["*/*"],
+                        "Accept-Encoding": ["gzip, deflate"],
+                        "Host": ["192.168.1.33:8082"],
+                        "Referer": ["http://192.168.1.33:8082/"],
+                        "User-Agent": ["Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; w3af.org)"]
+                    }
+                },
+                "response": {
+                    "status": "HTTP/1.1 200 OK",
+                    "header": {
+                        "Content-Length": ["380"],
+                        "Content-Type": ["text/html; charset=utf-8"],
+                        "Date": ["Wed, 25 Feb 2015 20:16:21 GMT"]
+                    },
+                    "body": {
+                        "contentEncoding": "text",
+                        "content": "CgoKPCFET0NUWVBFIGh0bWw+CjxodG1sPjxoZWFkPjx0aXRsZT5KYXZhU2NyaXB0IGluamVjdGlvbiBpbnRvIGhyZWYgbGluayBzb3VyY2U8L3RpdGxlPgoKPC9oZWFkPjxib2R5PgoKCjwhLS0gZ2xvYmFsIGxpbmsgc3RhcnQgLy8tLT4KVGhpcyB0ZXN0IGRlbW9uc3RyYXRlcyBpbmplY3Rpb24gb2YgSmF2YXNjcmlwdCBpbnRvIHRoZSBocmVmIHNvdXJjZSBvZiBhbiBodG1sIGxpbmsgKCZsdDthJmd0OyBlbGVtZW50KS4gPHAgLz4KPGEgaHJlZj0ieml2emlgeml2emkvKmh0dHA6Ly9leGFtcGxlLmNvbSIgY2xhc3M9Im9wZW4iIHJlbD0ibm9mb2xsb3ciPuaIkeimgeizo+adseilvzwvYT4KPCEtLSBnbG9iYWwgbGluayBlbmQvLy0tPgoKCjwvYm9keT48L2h0bWw+Cgo="
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "severity": "medium",
+        "summary": "Cross site scripting vulnerability",
+        "desc": "A Cross Site Scripting vulnerability was found at: \"http://192.168.1.33:8082/xss/reflect/onmouseover_fp\", using HTTP method GET. The sent data was: \"in=yarpp%22yarpp\" The modified parameter was \"in\". This vulnerability was found in the request with id 182.",
+        "urls": [{"url": "http://192.168.1.33:8082/xss/reflect/onmouseover_fp"}],
+        "httpTransactions": [
+            {
+                "id": 182,
+                "method": "GET",
+                "request": {
+                    "status": "GET http://192.168.1.33:8082/xss/reflect/onmouseover_fp?in=yarpp%22yarpp HTTP/1.1",
+                    "header": {
+                        "Accept": ["*/*"],
+                        "Accept-Encoding": ["gzip, deflate"],
+                        "Host": ["192.168.1.33:8082"],
+                        "Referer": ["http://192.168.1.33:8082/"],
+                        "User-Agent": ["Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; w3af.org)"]
+                    }
+                },
+                "response": {
+                    "status": "HTTP/1.1 200 OK",
+                    "header": {
+                        "Content-Length": ["375"],
+                        "Content-Type": ["text/html; charset=utf-8"],
+                        "Date": ["Wed, 25 Feb 2015 20:16:22 GMT"]
+                    },
+                    "body": {
+                        "contentEncoding": "text",
+                        "content": "Cgo8IURPQ1RZUEUgaHRtbD4KPGh0bWw+PGhlYWQ+PHRpdGxlPlJlZmxlY3RlZCBYU1MgLSBhdHRyaWJ1dGUgaW5qZWN0aW9uIGluIHRhZ3MgKGRxLjIpPC90aXRsZT4KCjwvaGVhZD48Ym9keT4KCgo8SDI+VXBkYXRlIFlvdXIgUHJlZmVyZW5jZXM8L0gyPjxwPgo8Rk9STSBhY3Rpb249Imh0dHA6Ly9mb29iYXIueWFob28uY29tIj4KSG9tZXBhZ2U6IDxpbnB1dCB2YWx1ZT0ieWFycHAieWFycHAiIG5hbWU9ImhwIiBzaXplPSI0MCI+PEJSPgo8aW5wdXQgdHlwZT0ic3VibWl0IiB2YWx1ZT0iQ2hhbmdlIj48L0ZPUk0+CjxwPjxBIGhyZWY9Imh0dHA6Ly9mb29iYXIueWFob28uY29tIj5Zb3VyIGhvbWVwYWdlPC9BPjxCUj4KCgo8L2JvZHk+PC9odG1sPgoKCgoK"
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "severity": "medium",
+        "summary": "Cross site scripting vulnerability",
+        "desc": "A Cross Site Scripting vulnerability was found at: \"http://192.168.1.33:8082/xss/reflect/raw1_fp\", using HTTP method GET. The sent data was: \"in=tugge%3C%2F-%3E\" The modified parameter was \"in\". This vulnerability was found in the request with id 191.",
+        "urls": [{"url": "http://192.168.1.33:8082/xss/reflect/raw1_fp"}],
+        "httpTransactions": [
+            {
+                "id": 191,
+                "method": "GET",
+                "request": {
+                    "status": "GET http://192.168.1.33:8082/xss/reflect/raw1_fp?in=tugge%3C%2F-%3E HTTP/1.1",
+                    "header": {
+                        "Accept": ["*/*"],
+                        "Accept-Encoding": ["gzip, deflate"],
+                        "Host": ["192.168.1.33:8082"],
+                        "Referer": ["http://192.168.1.33:8082/"],
+                        "User-Agent": ["Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; w3af.org)"]
+                    }
+                },
+                "response": {
+                    "status": "HTTP/1.1 200 OK",
+                    "header": {
+                        "Content-Length": ["415"],
+                        "Content-Type": ["text/html; charset=utf-8"],
+                        "Date": ["Wed, 25 Feb 2015 20:16:22 GMT"]
+                    },
+                    "body": {
+                        "contentEncoding": "text",
+                        "content": "Cgo8IURPQ1RZUEUgaHRtbD4KPGh0bWw+PGhlYWQ+PHRpdGxlPlJlZmxlY3RlZCByYXcgdGFncyAocmF3LjEpPC90aXRsZT4KCjwvaGVhZD48Ym9keT4KCgpIZWxsbyEgVGhpcyBpcyBhIHRlc3QgZm9yIHBvdGVudGlhbCBmYWxzZSBwb3NpdGl2ZSBvbiByYXcgdGFncyBlY2hvZWQuICBJbiB0aGlzIGNhc2UsIHRoZSBpbmplY3Rpb24gaXMgZWNob2VkIGluc2lkZSBvZiBhIHF1b3RlZCBKYXZhc2NyaXB0IHN0cmluZyAoc2VlIHBhZ2Ugc291cmNlKS4KCjxzY3JpcHQgIHR5cGU9InRleHQvamF2YXNjcmlwdCI+ZnVuY3Rpb24gZm9vKCkge2E9InNvbWUgdGV4dCB3aXRoIHR1Z2dlPC8tPiB0YWcgaW5zaWRlIEphdmFzY3JpcHQgcXVvdGVkIHN0cmluZyAoZmFsc2UgcG9zaXRpdmUpIn08L3NjcmlwdD4KCgo8L2JvZHk+PC9odG1sPgoKCg=="
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "severity": "medium",
+        "summary": "Cross site scripting vulnerability",
+        "desc": "A Cross Site Scripting vulnerability was found at: \"http://192.168.1.33:8082/xss/reflect/enc2\", using HTTP method GET. The sent data was: \"in=zu7zj%27zu7zj\" The modified parameter was \"in\". This vulnerability was found in the request with id 209.",
+        "urls": [{"url": "http://192.168.1.33:8082/xss/reflect/enc2"}],
+        "httpTransactions": [
+            {
+                "id": 209,
+                "method": "GET",
+                "request": {
+                    "status": "GET http://192.168.1.33:8082/xss/reflect/enc2?in=zu7zj%27zu7zj HTTP/1.1",
+                    "header": {
+                        "Accept": ["*/*"],
+                        "Accept-Encoding": ["gzip, deflate"],
+                        "Host": ["192.168.1.33:8082"],
+                        "Referer": ["http://192.168.1.33:8082/"],
+                        "User-Agent": ["Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; w3af.org)"]
+                    }
+                },
+                "response": {
+                    "status": "HTTP/1.1 200 OK",
+                    "header": {
+                        "Content-Length": ["365"],
+                        "Content-Type": ["text/html; charset=utf-8"],
+                        "Date": ["Wed, 25 Feb 2015 20:16:23 GMT"]
+                    },
+                    "body": {
+                        "contentEncoding": "text",
+                        "content": "Cgo8IURPQ1RZUEUgaHRtbD4KPGh0bWw+PGhlYWQ+PHRpdGxlPklpbmplY3Rpb24gaW4gSmF2YXNjcmlwdCB3aXRoIGRvdWJsZSBxdW90ZXMgYnV0IG5vdCBiYWNrc2xhc2ggZXNjYXBlZCB3aXRoIGJhY2tzbGFzaCAtIGV4cGxvaXRhYmxlIChlbmMuMik8L3RpdGxlPgoKPC9oZWFkPjxib2R5PgoKCiA8c2NyaXB0IGxhbmd1YWdlPSJqYXZhc2NyaXB0Ij4KdmFyIGYgPSAienU3emonenU3emoiOwo8L3NjcmlwdD4KCkhlbGxvITxCUj4gClRoaXMgdGVzdCBkZW1vbnN0cmF0ZXMgaW5qZWN0aW9uIGluIEpTIHdpdGggZG91YmxlIHF1b3RlcyBidXQgbm90IGJhY2tzbGFzaCBlc2NhcGVkIHdpdGggYmFja3NsYXNoLgoKCjwvYm9keT48L2h0bWw+Cgo="
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "severity": "medium",
+        "summary": "Cross site scripting vulnerability",
+        "desc": "A Cross Site Scripting vulnerability was found at: \"http://192.168.1.33:8082/xss/reflect/full1\", using HTTP method GET. The sent data was: \"in=\" The modified parameter was \"in\". This vulnerability was found in the request with id 252.",
+        "urls": [{"url": "http://192.168.1.33:8082/xss/reflect/full1"}],
+        "httpTransactions": [
+            {
+                "id": 252,
+                "method": "GET",
+                "request": {
+                    "status": "GET http://192.168.1.33:8082/xss/reflect/full1?in=tqabw%3C%2F-%3Etqabw%2F%2Atqabw%22tqabwtqabw%27tqabwtqabw%60tqabwtqabw%20%3D HTTP/1.1",
+                    "header": {
+                        "Accept": ["*/*"],
+                        "Accept-Encoding": ["gzip, deflate"],
+                        "Host": ["192.168.1.33:8082"],
+                        "Referer": ["http://192.168.1.33:8082/"],
+                        "User-Agent": ["Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; w3af.org)"]
+                    }
+                },
+                "response": {
+                    "status": "HTTP/1.1 200 OK",
+                    "header": {
+                        "Content-Length": ["230"],
+                        "Content-Type": ["text/html; charset=utf-8"],
+                        "Date": ["Wed, 25 Feb 2015 20:16:26 GMT"]
+                    },
+                    "body": {
+                        "contentEncoding": "text",
+                        "content": "Cgo8IURPQ1RZUEUgaHRtbD4KPGh0bWw+PGhlYWQ+PHRpdGxlPkZ1bGwgSmF2YXNjcmlwdCBJbmplY3Rpb24gKGZ1bGwuMSk8L3RpdGxlPgoKPC9oZWFkPjxib2R5PgoKCkhlbGxvITxCUj4gClRoZSB2YWx1ZSBvZiBjZ2kgcGFyYW1ldGVyICZxdW90O2luJnF1b3Q7IGlzOiB0cWFidzwvLT50cWFidy8qdHFhYncidHFhYnd0cWFidyd0cWFid3RxYWJ3YHRxYWJ3dHFhYncgPQoKCjwvYm9keT48L2h0bWw+Cgo="
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "severity": "medium",
+        "summary": "Cross site scripting vulnerability",
+        "desc": "A Cross Site Scripting vulnerability was found at: \"http://192.168.1.33:8082/xss/reflect/js3_notags_fp\", using HTTP method GET. The sent data was: \"in=8b6ks%2F%2A\" The modified parameter was \"in\". This vulnerability was found in the request with id 218.",
+        "urls": [{"url": "http://192.168.1.33:8082/xss/reflect/js3_notags_fp"}],
+        "httpTransactions": [
+            {
+                "id": 218,
+                "method": "GET",
+                "request": {
+                    "status": "GET http://192.168.1.33:8082/xss/reflect/js3_notags_fp?in=8b6ks%2F%2A HTTP/1.1",
+                    "header": {
+                        "Accept": ["*/*"],
+                        "Accept-Encoding": ["gzip, deflate"],
+                        "Host": ["192.168.1.33:8082"],
+                        "Referer": ["http://192.168.1.33:8082/"],
+                        "User-Agent": ["Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; w3af.org)"]
+                    }
+                },
+                "response": {
+                    "status": "HTTP/1.1 200 OK",
+                    "header": {
+                        "Content-Length": ["695"],
+                        "Content-Type": ["text/html; charset=utf-8"],
+                        "Date": ["Wed, 25 Feb 2015 20:16:24 GMT"]
+                    },
+                    "body": {
+                        "contentEncoding": "text",
+                        "content": "Cgo8IURPQ1RZUEUgaHRtbD4KPGh0bWw+PGhlYWQ+PHRpdGxlPkphdmFTY3JpcHQgaW5qZWN0aW9uIGluIEpTIGV4ZWN1dGFibGUgY29udGV4dCwgbm8gdGFncyBjaGFyYWN0ZXJzIC0gZXhwbG9pdGFibGUgKGpzLjMpPC90aXRsZT4KCjwvaGVhZD48Ym9keT4KCgogPHNjcmlwdCBsYW5ndWFnZT0iamF2YXNjcmlwdCI+CnZhciBmID0gewogICAgICAgIG5vZGUgOiAnI21lZGlhc3BvcnRzc2NvcmVib2FyZGdyYW5kc2xhbScsCiAgICAgICAgbGVhZ3VlIDogJ25mbCcsCiAgICAgICAgdGVhbSA6ICcnLAogICAgICAgIHJlZnJlc2g6ICcxJywKICAgICAgICBmcmVxdWVuY3k6ICcxNTAwMCcsCiAgICAgICAgZGF0ZTogJycsCiAgICAgICAgd2VlazogJzEnLAogICAgICAgIGdvb2Q6ICc4YjZrcy8qJywKICAgICAgICBwaGFzZTogJzInLAogICAgICAgIGNvbmY6ICcnLAogICAgICAgIG1heEFnZTogJzEwJywKICAgICAgICBkaXZpc2lvbjogJycsCiAgICAgICAgc2Vhc29uOiAnMjAxNCcsCiAgICAgICAgeGhyUGF0aDogJycKICAgICAgfTsKPC9zY3JpcHQ+CgpIZWxsbyE8QlI+IApUaGlzIHRlc3QgZGVtb25zdHJhdGVzIGV4cGxvaXRhYmxlIEluamVjdGlvbiBpbnRvIEpTIGV4ZWN1dGFibGUgY29udGV4dCwgd2l0aCAmbHQ7IGFuZCAmZ3Q7ICh0YWcgY2hhcmFjdGVycykgZmlsdGVyZWQgb3V0LgoKCjwvYm9keT48L2h0bWw+Cgo="
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "severity": "medium",
+        "summary": "Cross site scripting vulnerability",
+        "desc": "A Cross Site Scripting vulnerability was found at: \"http://192.168.1.33:8082/xss/reflect/js6_sq_combo1\", using HTTP method GET. The sent data was: \"in=aa3lg%2F%2A\" The modified parameter was \"in\". This vulnerability was found in the request with id 296.",
+        "urls": [{"url": "http://192.168.1.33:8082/xss/reflect/js6_sq_combo1"}],
+        "httpTransactions": [
+            {
+                "id": 296,
+                "method": "GET",
+                "request": {
+                    "status": "GET http://192.168.1.33:8082/xss/reflect/js6_sq_combo1?in=aa3lg%2F%2A HTTP/1.1",
+                    "header": {
+                        "Accept": ["*/*"],
+                        "Accept-Encoding": ["gzip, deflate"],
+                        "Host": ["192.168.1.33:8082"],
+                        "Referer": ["http://192.168.1.33:8082/"],
+                        "User-Agent": ["Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; w3af.org)"]
+                    }
+                },
+                "response": {
+                    "status": "HTTP/1.1 200 OK",
+                    "header": {
+                        "Content-Length": ["613"],
+                        "Content-Type": ["text/html; charset=utf-8"],
+                        "Date": ["Wed, 25 Feb 2015 20:16:29 GMT"]
+                    },
+                    "body": {
+                        "contentEncoding": "text",
+                        "content": "Cgo8IURPQ1RZUEUgaHRtbD4KPGh0bWw+PGhlYWQ+PHRpdGxlPkphdmFTY3JpcHQgYW5kIHNpbmdsZSBxdW90ZSBpbmplY3Rpb24gaW4gSlMgYmxvY2sgKGpzLjYpPC90aXRsZT4KCjwvaGVhZD48Ym9keT4KCgo8Zm9ybT4KPGlucHV0IGlkPSJzZWFyY2hJbnB1dCIgdHlwZT0idGV4dCIgbmFtZT0icXVlc3Rpb25fYm94IiBhdXRvY29tcGxldGU9Im9mZiIgdGl0bGU9IlNlYXJjaCBpbnB1dCIgdmFsdWU9ImFhM2xnLyoiIG9uQmx1cj0iYmx1clNlYXJjaEhlbHAoKSIgb25mb2N1cz0iZm9jdXNTZWFyY2hIZWxwKCk7Ii8+CjwvZm9ybT4KCjxzY3JpcHQ+CiAgICAgICAgdmFyIGtleXMgPSB7QV9wbjonWWFob28gSGVscCAtIFNlYXJjaCBSZXN1bHRzJywgQV9pZDonc291cmNlPWFuc3dlcnMubGFuZGluZ19zZWFyY2gmcXVlc3Rpb25fYm94PWFhM2xnLyonLCBBX3B0Oidlbl9VUycsIGludGw6J2VuX1VTJ307Cjwvc2NyaXB0PgoKSGVsbG8hPEJSPiAKVGhpcyB0ZXN0IGRlbW9uc3RyYXRlcyBleHBsb2l0YWJsZSBJbmplY3Rpb24gZHVlIHRvIHVuc2FmZSBoYW5kbGluZyBvZiBzaW5nbGUgcXVvdGVzIGluc2lkZSBvZiBhIEphdmFzY3JpcHQgYmxvY2suCgoKPC9ib2R5PjwvaHRtbD4KCg=="
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "severity": "medium",
+        "summary": "Cross site scripting vulnerability",
+        "desc": "A Cross Site Scripting vulnerability was found at: \"http://192.168.1.33:8082/xss/reflect/js_script_close\", using HTTP method GET. The sent data was: \"in=cmujx%20%3D\" The modified parameter was \"in\". This vulnerability was found in the request with id 282.",
+        "urls": [{"url": "http://192.168.1.33:8082/xss/reflect/js_script_close"}],
+        "httpTransactions": [
+            {
+                "id": 282,
+                "method": "GET",
+                "request": {
+                    "status": "GET http://192.168.1.33:8082/xss/reflect/js_script_close?in=cmujx%20%3D HTTP/1.1",
+                    "header": {
+                        "Accept": ["*/*"],
+                        "Accept-Encoding": ["gzip, deflate"],
+                        "Host": ["192.168.1.33:8082"],
+                        "Referer": ["http://192.168.1.33:8082/"],
+                        "User-Agent": ["Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; w3af.org)"]
+                    }
+                },
+                "response": {
+                    "status": "HTTP/1.1 200 OK",
+                    "header": {
+                        "Content-Length": ["649"],
+                        "Content-Type": ["text/html; charset=utf-8"],
+                        "Date": ["Wed, 25 Feb 2015 20:16:28 GMT"]
+                    },
+                    "body": {
+                        "contentEncoding": "text",
+                        "content": "Cgo8IURPQ1RZUEUgaHRtbD4KPGh0bWw+PGhlYWQ+PHRpdGxlPmNsb3Npbmcgc2NyaXB0IHRhZyBpbmplY3Rpb24gaW4gcHJvcGVybHkgcXVvdGVkIHN0cmluZ3MgPC90aXRsZT4KCjwvaGVhZD48Ym9keT4KCgogPHNjcmlwdCBsYW5ndWFnZT0iamF2YXNjcmlwdCI+CnZhciBmID0gewogICAgICAgIG5vZGUgOiAnI21lZGlhc3BvcnRzc2NvcmVib2FyZGdyYW5kc2xhbScsCiAgICAgICAgbGVhZ3VlIDogJ25mbCcsCiAgICAgICAgdGVhbSA6ICcnLAogICAgICAgIHJlZnJlc2g6ICcxJywKICAgICAgICBmcmVxdWVuY3k6ICcxNTAwMCcsCiAgICAgICAgZGF0ZTogJycsCiAgICAgICAgd2VlazogJzEnLAogICAgICAgIGdvb2Q6ICdjbXVqeCA9JywKICAgICAgICBwaGFzZTogJzInLAogICAgICAgIGNvbmY6ICcnLAogICAgICAgIG1heEFnZTogJzEwJywKICAgICAgICBkaXZpc2lvbjogJycsCiAgICAgICAgc2Vhc29uOiAnMjAxNCcsCiAgICAgICAgeGhyUGF0aDogJycKICAgICAgfTsKPC9zY3JpcHQ+CgpIZWxsbyE8QlI+IApUaGlzIHRlc3QgZGVtb25zdHJhdGVzICBpbmplY3Rpb24gb2YgYSBzY3JpcHQgY2xvc2luZyB0YWcgaW5zaWRlIG9mIGEgIEphdmFzY3JpcHQgcHJvcGVybHktcXVvdGVkIHN0cmluZy4KCgoKPC9ib2R5PjwvaHRtbD4KCg=="
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "severity": "medium",
+        "summary": "Cross site scripting vulnerability",
+        "desc": "A Cross Site Scripting vulnerability was found at: \"http://192.168.1.33:8082/xss/reflect/js3\", using HTTP method GET. The sent data was: \"in=ouhho%2F%2A\" The modified parameter was \"in\". This vulnerability was found in the request with id 316.",
+        "urls": [{"url": "http://192.168.1.33:8082/xss/reflect/js3"}],
+        "httpTransactions": [
+            {
+                "id": 316,
+                "method": "GET",
+                "request": {
+                    "status": "GET http://192.168.1.33:8082/xss/reflect/js3?in=ouhho%2F%2A HTTP/1.1",
+                    "header": {
+                        "Accept": ["*/*"],
+                        "Accept-Encoding": ["gzip, deflate"],
+                        "Host": ["192.168.1.33:8082"],
+                        "Referer": ["http://192.168.1.33:8082/"],
+                        "User-Agent": ["Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; w3af.org)"]
+                    }
+                },
+                "response": {
+                    "status": "HTTP/1.1 200 OK",
+                    "header": {
+                        "Content-Length": ["373"],
+                        "Content-Type": ["text/html; charset=utf-8"],
+                        "Date": ["Wed, 25 Feb 2015 20:16:30 GMT"]
+                    },
+                    "body": {
+                        "contentEncoding": "text",
+                        "content": "Cgo8IURPQ1RZUEUgaHRtbD4KPGh0bWw+PGhlYWQ+PHRpdGxlPkphdmFTY3JpcHQgaW5qZWN0aW9uIGluIEpTIGV4ZWN1dGFibGUgY29udGV4dCAtIGV4cGxvaXRhYmxlIChqcy4zKTwvdGl0bGU+Cgo8L2hlYWQ+PGJvZHk+CgoKIDxzY3JpcHQgbGFuZ3VhZ2U9ImphdmFzY3JpcHQiPgp2YXIgZiA9IHsKICAgICAgICBkYXRlOiAnJywKICAgICAgICB3ZWVrOiAnMScsCiAgICAgICAgYmFkOiBvdWhoby8qLAogICAgICAgIHBoYXNlOiAnMicsCiAgICAgIH07Cjwvc2NyaXB0PgoKSGVsbG8hPEJSPiAKVGhpcyB0ZXN0IGRlbW9uc3RyYXRlcyBleHBsb2l0YWJsZSBJbmplY3Rpb24gaW50byBKUyBleGVjdXRhYmxlIGNvbnRleHQuCgoKPC9ib2R5PjwvaHRtbD4KCg=="
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "severity": "medium",
+        "summary": "Cross site scripting vulnerability",
+        "desc": "A Cross Site Scripting vulnerability was found at: \"http://192.168.1.33:8082/xss/reflect/js4_dq_fp\", using HTTP method GET. The sent data was: \"in=39d6c%2F%2A\" The modified parameter was \"in\". This vulnerability was found in the request with id 384.",
+        "urls": [{"url": "http://192.168.1.33:8082/xss/reflect/js4_dq_fp"}],
+        "httpTransactions": [
+            {
+                "id": 384,
+                "method": "GET",
+                "request": {
+                    "status": "GET http://192.168.1.33:8082/xss/reflect/js4_dq_fp?in=39d6c%2F%2A HTTP/1.1",
+                    "header": {
+                        "Accept": ["*/*"],
+                        "Accept-Encoding": ["gzip, deflate"],
+                        "Host": ["192.168.1.33:8082"],
+                        "Referer": ["http://192.168.1.33:8082/"],
+                        "User-Agent": ["Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; w3af.org)"]
+                    }
+                },
+                "response": {
+                    "status": "HTTP/1.1 200 OK",
+                    "header": {
+                        "Content-Length": ["469"],
+                        "Content-Type": ["text/html; charset=utf-8"],
+                        "Date": ["Wed, 25 Feb 2015 20:16:35 GMT"]
+                    },
+                    "body": {
+                        "contentEncoding": "text",
+                        "content": "Cgo8IURPQ1RZUEUgaHRtbD4KPGh0bWw+PGhlYWQ+PHRpdGxlPkphdmFTY3JpcHQgYW5kIGRvdWJsZS1xdW90ZSBpbmplY3Rpb24gaW4gSlMgYmxvY2sgKGpzLjQpPC90aXRsZT4KCjwvaGVhZD48Ym9keT4KCgogPHNjcmlwdCBsYW5ndWFnZT0iamF2YXNjcmlwdCI+CnZhciBmID0gewogICAgICAgIGRhdGU6ICIiLAogICAgICAgIHdlZWs6ICIxIiwKICAgICAgICBnb29kOiAiMzlkNmMvKiIsCiAgICAgICAgcGhhc2U6ICIyIiwKICAgICAgfTsKPC9zY3JpcHQ+CgpIZWxsbyE8QlI+IApUaGlzIHRlc3QgZGVtb25zdHJhdGVzIGEgZmFsc2UgcG9zaXRpdmUgcmVsYXRlZCB0byBpbmplY3Rpb24gb2YgZG91YmxlIHF1b3RlcyBpbnRvIGEgSmF2YXNjcmlwdCBibG9jay4gIEl0IGlzIGEgZmFsc2UgcG9zaXRpdmUgc2luY2UgZG91YmxlIHF1b3RlcyBhbmQgYmFja3NsYXNoZXMgYXJlIGVzY2FwZWQuCgoKPC9ib2R5PjwvaHRtbD4KCg=="
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "severity": "medium",
+        "summary": "Cross site scripting vulnerability",
+        "desc": "A Cross Site Scripting vulnerability was found at: \"http://192.168.1.33:8082/xss/reflect/onmouseover_unquoted\", using HTTP method GET. The sent data was: \"in=biw20%20%3D\" The modified parameter was \"in\". This vulnerability was found in the request with id 365.",
+        "urls": [{"url": "http://192.168.1.33:8082/xss/reflect/onmouseover_unquoted"}],
+        "httpTransactions": [
+            {
+                "id": 365,
+                "method": "GET",
+                "request": {
+                    "status": "GET http://192.168.1.33:8082/xss/reflect/onmouseover_unquoted?in=biw20%20%3D HTTP/1.1",
+                    "header": {
+                        "Accept": ["*/*"],
+                        "Accept-Encoding": ["gzip, deflate"],
+                        "Host": ["192.168.1.33:8082"],
+                        "Referer": ["http://192.168.1.33:8082/"],
+                        "User-Agent": ["Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; w3af.org)"]
+                    }
+                },
+                "response": {
+                    "status": "HTTP/1.1 200 OK",
+                    "header": {
+                        "Content-Length": ["367"],
+                        "Content-Type": ["text/html; charset=utf-8"],
+                        "Date": ["Wed, 25 Feb 2015 20:16:34 GMT"]
+                    },
+                    "body": {
+                        "contentEncoding": "text",
+                        "content": "Cgo8IURPQ1RZUEUgaHRtbD4KPGh0bWw+PGhlYWQ+PHRpdGxlPlJlZmxlY3RlZCBYU1MgLSBhdHRyaWJ1dGUgaW5qZWN0aW9uIGluIHRhZ3MgKGRxLjIpPC90aXRsZT4KCjwvaGVhZD48Ym9keT4KCgo8SDI+VXBkYXRlIFlvdXIgUHJlZmVyZW5jZXM8L0gyPjxwPgo8Rk9STSBhY3Rpb249Imh0dHA6Ly9mb29iYXIueWFob28uY29tIj4KSG9tZXBhZ2U6IDxpbnB1dCB2YWx1ZT1iaXcyMCA9IG5hbWU9ImhwIiBzaXplPSI0MCI+PEJSPgo8aW5wdXQgdHlwZT0ic3VibWl0IiB2YWx1ZT0iQ2hhbmdlIj48L0ZPUk0+CjxwPjxBIGhyZWY9Imh0dHA6Ly9mb29iYXIueWFob28uY29tIj5Zb3VyIGhvbWVwYWdlPC9BPjxCUj4KCgo8L2JvZHk+PC9odG1sPgoKCg=="
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "severity": "medium",
+        "summary": "Cross site scripting vulnerability",
+        "desc": "A Cross Site Scripting vulnerability was found at: \"http://192.168.1.33:8082/xss/reflect/onmouseover_div_unquoted\", using HTTP method GET. The sent data was: \"in=n3nzg%20%3D\" The modified parameter was \"in\". This vulnerability was found in the request with id 355.",
+        "urls": [{"url": "http://192.168.1.33:8082/xss/reflect/onmouseover_div_unquoted"}],
+        "httpTransactions": [
+            {
+                "id": 355,
+                "method": "GET",
+                "request": {
+                    "status": "GET http://192.168.1.33:8082/xss/reflect/onmouseover_div_unquoted?in=n3nzg%20%3D HTTP/1.1",
+                    "header": {
+                        "Accept": ["*/*"],
+                        "Accept-Encoding": ["gzip, deflate"],
+                        "Host": ["192.168.1.33:8082"],
+                        "Referer": ["http://192.168.1.33:8082/"],
+                        "User-Agent": ["Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; w3af.org)"]
+                    }
+                },
+                "response": {
+                    "status": "HTTP/1.1 200 OK",
+                    "header": {
+                        "Content-Length": ["269"],
+                        "Content-Type": ["text/html; charset=utf-8"],
+                        "Date": ["Wed, 25 Feb 2015 20:16:33 GMT"]
+                    },
+                    "body": {
+                        "contentEncoding": "text",
+                        "content": "Cgo8IURPQ1RZUEUgaHRtbD4KPGh0bWw+PGhlYWQ+PHRpdGxlPk9ubW91c2VvdmVyIGF0dHJpYnV0ZSBpbmplY3Rpb248L3RpdGxlPgoKPC9oZWFkPjxib2R5PgoKCkhlbGxvITxCUj4gCjxkaXYgY2xhc3M9bjNuemcgPT4xMjM8L2Rpdj4KClRoaXMgZXhhbXBsZXMgaW5qZWN0IHVzZXIgaW5wdXQgaW50byB0aGUgY2xhc3MgYXR0cmlidXRlIG9mIGEgZGl2LCB0aGUgcXVvdGVzIGFuZCB0YWcgY2hhcmFjdGVycyBhcmUgZmlsdGVyZWQgb3V0LgoKCjwvYm9keT48L2h0bWw+Cgo="
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "severity": "medium",
+        "summary": "Cross site scripting vulnerability",
+        "desc": "A Cross Site Scripting vulnerability was found at: \"http://192.168.1.33:8082/xss/reflect/js3_fp\", using HTTP method GET. The sent data was: \"in=mhvg7%20%3D\" The modified parameter was \"in\". This vulnerability was found in the request with id 418.",
+        "urls": [{"url": "http://192.168.1.33:8082/xss/reflect/js3_fp"}],
+        "httpTransactions": [
+            {
+                "id": 418,
+                "method": "GET",
+                "request": {
+                    "status": "GET http://192.168.1.33:8082/xss/reflect/js3_fp?in=mhvg7%20%3D HTTP/1.1",
+                    "header": {
+                        "Accept": ["*/*"],
+                        "Accept-Encoding": ["gzip, deflate"],
+                        "Host": ["192.168.1.33:8082"],
+                        "Referer": ["http://192.168.1.33:8082/"],
+                        "User-Agent": ["Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; w3af.org)"]
+                    }
+                },
+                "response": {
+                    "status": "HTTP/1.1 200 OK",
+                    "header": {
+                        "Content-Length": ["519"],
+                        "Content-Type": ["text/html; charset=utf-8"],
+                        "Date": ["Wed, 25 Feb 2015 20:16:38 GMT"]
+                    },
+                    "body": {
+                        "contentEncoding": "text",
+                        "content": "CgoKCiA8c2NyaXB0IGxhbmd1YWdlPSJqYXZhc2NyaXB0Ij4KdmFyIGYgPSB7CiAgICAgICAgbm9kZSA6ICcjbWVkaWFzcG9ydHNzY29yZWJvYXJkZ3JhbmRzbGFtJywKICAgICAgICBsZWFndWUgOiAnbmZsJywKICAgICAgICB0ZWFtIDogJycsCiAgICAgICAgcmVmcmVzaDogJzEnLAogICAgICAgIGZyZXF1ZW5jeTogJzE1MDAwJywKICAgICAgICBkYXRlOiAnJywKICAgICAgICB3ZWVrOiAnMScsCiAgICAgICAgZ29vZDogJ21odmc3ID0nLAogICAgICAgIHBoYXNlOiAnMicsCiAgICAgICAgY29uZjogJycsCiAgICAgICAgbWF4QWdlOiAnMTAnLAogICAgICAgIGRpdmlzaW9uOiAnJywKICAgICAgICBzZWFzb246ICcyMDE0JywKICAgICAgICB4aHJQYXRoOiAnJwogICAgICB9Owo8L3NjcmlwdD4KCkhlbGxvITxCUj4gClRoaXMgdGVzdCBkZW1vbnN0cmF0ZXMgZmFsc2UgcG9zaXRpdmUgb24gaW5qZWN0aW9uIGludG8gSmF2YXNjcmlwdCBwcm9wZXJseS1xdW90ZWQgc3RyaW5nLgoKCgo8L2JvZHk+PC9odG1sPgoK"
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "severity": "medium",
+        "summary": "Cross site scripting vulnerability",
+        "desc": "A Cross Site Scripting vulnerability was found at: \"http://192.168.1.33:8082/xss/reflect/js3_search_fp\", using HTTP method GET. The sent data was: \"in=uxtmn%2F%2A\" The modified parameter was \"in\". This vulnerability was found in the request with id 423.",
+        "urls": [{"url": "http://192.168.1.33:8082/xss/reflect/js3_search_fp"}],
+        "httpTransactions": [
+            {
+                "id": 423,
+                "method": "GET",
+                "request": {
+                    "status": "GET http://192.168.1.33:8082/xss/reflect/js3_search_fp?in=uxtmn%2F%2A HTTP/1.1",
+                    "header": {
+                        "Accept": ["*/*"],
+                        "Accept-Encoding": ["gzip, deflate"],
+                        "Host": ["192.168.1.33:8082"],
+                        "Referer": ["http://192.168.1.33:8082/"],
+                        "User-Agent": ["Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; w3af.org)"]
+                    }
+                },
+                "response": {
+                    "status": "HTTP/1.1 200 OK",
+                    "header": {
+                        "Content-Type": ["text/html; charset=utf-8"],
+                        "Date": ["Wed, 25 Feb 2015 20:16:38 GMT"],
+                        "Transfer-Encoding": ["chunked"]
+                    },
+                    "body": {
+                        "contentEncoding": "text",
+                        "content": "PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMDEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvVFIvaHRtbDQvc3RyaWN0LmR0ZCI+CjxodG1sIGxhbmc9ImVuLVVTIj48aGVhZD48bWV0YSBodHRwLWVxdWl2PSJjb250ZW50LXR5cGUiIGNvbnRlbnQ9InRleHQvaHRtbDsgY2hhcnNldD1VVEYtOCI+PHNjcmlwdD4oZnVuY3Rpb24oKXt2YXIgaD1kb2N1bWVudC5kb2N1bWVudEVsZW1lbnQ7aC5jbGFzc05hbWUrPSIganMiOyhuZXcgSW1hZ2UoKSkuc3JjPSdodHRwOi8vbC55aW1nLmNvbS9wdi9pL2FsbC92ZXJ0aWNhbC9nYW1lcy91c19zcnBfbWV0cm9fZ2FtZXNfMjAxNDAxMTYxNDI2LnBuZyc7fSkoKTs8L3NjcmlwdD48bGluayByZWw9ImFsdGVybmF0ZSIgdHlwZT0iYXBwbGljYXRpb24vcnNzK3htbCIgdGl0bGU9IllhaG9vIEdhbWVzIFNlYXJjaCByZXN1bHRzIGZvciB1eHRtbi8qIiBocmVmPSJodHRwOi8vZ2FtZXMuc2VhcmNoLnlhaG9vLmNvbS9yc3M/ZWk9VVRGLTgmcD1hbGVydCUyODE0MiUyOSUzQiUyOCZmcj1zZnBhbGVydCUyODE0MiUyOSUzQiUyOCI+PHRpdGxlPnV4dG1uLyogLSBZYWhvbyBHYW1lcyBTZWFyY2ggUmVzdWx0czwvdGl0bGU+PGxpbmsgcmVsPSJzdHlsZXNoZWV0IiB0eXBlPSJ0ZXh0L2NzcyIgaHJlZj0iaHR0cDovL2wueWltZy5jb20vcHYvbGliL3M4L3ZlcnRpY2FsL3VzX3NycF9wdXJwbGVfZ2FtZXNfMV8yMDE0MDcwOTIwMzUuY3NzIj48bGluayByZWw9InN0eWxlc2hlZXQiIHR5cGU9InRleHQvY3NzIiBocmVmPSJodHRwOi8vbC55aW1nLmNvbS96ei9jb21ibz9reC95dWNzL3VoMy91aC8xMDY1L2Nzcy8vdWhfbm9uX21haWwtbWluLmNzcyZreC95dWNzL3VoX2NvbW1vbi9tZXRhLzMvY3NzL21ldGEtbWluLmNzcyZreC95dWNzL3VoMy90b3BfYmFyLzMxMy9jc3Mvbm9faWNvbnMtbWluLmNzcyZreC95dWNzL3VoMy9icmVha2luZ25ld3MvY3NzLzEvYnJlYWtpbmdfbmV3cy1taW4uY3NzIj48bGluayByZWw9InN0eWxlc2hlZXQiIHR5cGU9InRleHQvY3NzIiBocmVmPSJodHRwOi8vbC55aW1nLmNvbS9wdi9saWIvczgvdmVydGljYWwvc3JwX2J1Y2tldGJhcl95dWkzXzIwMTMwNjA1MTA1My5jc3MiPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+cywuc3BydCwuc3ByaXRlLCNzcyBhLnNzLXJlbW92ZSwubmV3cy1ucGgsLnN0YXJzLXNtIHNwYW4sLnN0YXJzLWxnIHNwYW4sLnRobWJwbGF5LC5zYy1wcm9tby1pbWcsLnNjLWNsb3NlLC55dWkzLWNhcm91c2VsLW5hdi1pdGVtLC55dWkzLWNhcm91c2VsLW5hdi1pdGVtLXNlbGVjdGVkLC55dWkzLWNhcm91c2VsLWJ1dHRvbiwjc2lkZWJhciAuYmQgdWwuZmlsdGVyX2xpc3QgbGkuZnRzIHNwYW4sI3NpZGViYXIgLmJkIHVsLmZpbHRlcl9saXN0IGxpLmZ0cyBzcGFuLmFjdGl2ZXtiYWNrZ3JvdW5kLWltYWdlOnVybChodHRwOi8vbC55aW1nLmNvbS9wdi9pL2FsbC92ZXJ0aWNhbC9nYW1lcy91c19zcnBfbWV0cm9fZ2FtZXNfMjAxNDAxMTYxNDI2LnBuZyk7fSNsb2dve2hlaWdodDogMzRweDt3aWR0aDogMTE5cHg7bWFyZ2luLXRvcDogMnB4OyBtYXJnaW4tbGVmdDogMjNweDtiYWNrZ3JvdW5kLXJlcGVhdDpuby1yZXBlYXQ7YmFja2dyb3VuZC1wb3NpdGlvbjogMCAwO2Rpc3BsYXk6IGJsb2NrO292ZXJmbG93OiBoaWRkZW47dGV4dC1pbmRlbnQ6IC05OTk5cHg7fSNsb2dveyBiYWNrZ3JvdW5kLWltYWdlOnVybChodHRwOi8vbC55aW1nLmNvbS9yei9sL3lhaG9vX2dhbWVzX2VuLVVTX2ZfcF8xMTl4MzQucG5nKTsqYmFja2dyb3VuZC1pbWFnZTp1cmwoaHR0cDovL2wueWltZy5jb20vcnovbC95YWhvb19nYW1lc19lbi1VU19mX3BfMTE5eDM0LmdpZik7fUBtZWRpYSAoLXdlYmtpdC1taW4tZGV2aWNlLXBpeGVsLXJhdGlvOiAyKSwgKG1pbi1yZXNvbHV0aW9uOiAxOTJkcGkpIHsjbG9nb3tiYWNrZ3JvdW5kLWltYWdlOnVybChodHRwOi8vbC55aW1nLmNvbS9yei9sL3lhaG9vX2dhbWVzX2VuLVVTX2ZfcF8xMTl4MzRfMngucG5nKTsgYmFja2dyb3VuZC1zaXplOiAxMTlweH19LmdhbWVzLWVudGl0eS1lbnRyeSAucGxheS1idXR0b24gLnBsYXktaWNvbiwuZ2FtZXMtZW50aXR5LWVudHJ5IC5zbS1tZWRpYSAuZGVmYXVsdC10aHVtYiwjcG9wZ2FtZSAucG9wZ2FtZS1pbWcgLmRlZmF1bHQtdGh1bWJ7YmFja2dyb3VuZC1pbWFnZTp1cmwoaHR0cDovL2wueWltZy5jb20vcHYvaS9hbGwvdmVydGljYWwvZ2FtZXMvdXNfc3JwX21ldHJvX2dhbWVzXzIwMTQwMTE2MTQyNi5wbmcpO308L3N0eWxlPjwvaGVhZD48Ym9keSBpZD0ieXNjaCIgY2xhc3M9InNhZmFyaSB3ZWJraXQgbWFjIHY0XzE0Ij48ZGl2IGlkPSJkb2MiIGNsYXNzPSJ1aDMtcCI+PGgxIGNsYXNzPSJvZmYtbGVmdCI+WWFob28gR2FtZXMgV2ViIFNlYXJjaDwvaDE+PHN0eWxlPiN5dWNze3BhZGRpbmc6MH0jeXVjcyAueXVjcy1hdmF0YXJ7d2lkdGg6MjJweDtoZWlnaHQ6MjJweH0jeXVjcyBhI3l1Y3MtbWFpbF9saW5rX2lke193aWR0aDozMHB4O190ZXh0LWluZGVudDowO19iYWNrZ3JvdW5kLXBvc2l0aW9uOjAgLTQzNTJweH0jeXVjcy1wcm9maWxle19tYXJnaW4tcmlnaHQ6LTEwcHg7X3dpZHRoOjc1cHh9I3l1Y3MgI3l1Y3MtcHJvZmlsZV90ZXh0IC55dWhlYWQtbmFtZS1ncmVldGluZ3tkaXNwbGF5Om5vbmV9I3l1Y3MgI3l1Y3MtcHJvZmlsZV90ZXh0IC55dWhlYWQtbmFtZXt0b3A6MDttYXgtd2lkdGg6NjVweDtfd2lkdGg6NDBweH0jeXVjcy1wcm9maWxlX3RleHR7bWF4LXdpZHRoOjY1cHh9I3l1Y3MgI3l1Y3MtbmF2IC55dWNzLW1lbnUgdWwgbGkgYTpob3ZlciwjeXVjcyAjeXVjcy1oZWxwIC55dWNzLW1lbnUgdWwgbGkgYTpob3ZlciwjeXVjcyAueXVjcy1wcm9maWxlLWl0ZW1zLXBhbmVsIGE6aG92ZXJ7YmFja2dyb3VuZC1jb2xvcjp0cmFuc3BhcmVudDt0ZXh0LWRlY29yYXRpb246dW5kZXJsaW5lfSN5dWNzLXRvcC1pbm5lcnttYXJnaW4tbGVmdDowfSNkb2MudWgzLXAgI3l1Y3NIZWFkICN5dWNzLXRvcC1ob21le21hcmdpbi10b3A6MnB4ICFpbXBvcnRhbnR9I3l1Y3MgLnl1Y3Mtbm9zY3JpcHQgLnl1Y3Mtbm9fbWVudSAueXVjcy1zaWdub3V0Omxpbmt7bGVmdDozMHB4O3RvcDoxMHB4O3Bvc2l0aW9uOmFic29sdXRlOypsZWZ0OjB9I3l1Y3NIZWFke2JhY2tncm91bmQtY29sb3I6I2ZhZmFmY30jeXVjcyAjeXVjcy1wcm9maWxlX2lubmVyLnl1Y3MtbnYzIC55dWNzLXByb2ZpbGUtaXRlbXMtcGFuZWwgbGkgYXt3aGl0ZS1zcGFjZTpub3JtYWx9PC9zdHlsZT4gIDxkaXYgaWQ9Inl1Y3NIZWFkIiBjbGFzcz0ieXVjcy1zcnAgeXVjcy1lbi11cyAgeXVjcy1zdGFuZGFyZCI+PCEtLSBtZXRhIC0tPjxkaXYgaWQ9Inl1Y3MtbWV0YSIgZGF0YS1hdXRoc3RhdGU9Im1pZGRsZWF1dGgiIGRhdGEtY29icmFuZD0ic3RhbmRhcmQiIGRhdGEtY3J1bWI9ImdmNzhockNTNGk5IiBkYXRhLWd0YT0iMklKbU8xa1Z1SnAiIGRhdGEtZGV2aWNlPSJkZXNrdG9wIiBkYXRhLWV4cGVyaWVuY2U9InVoMyIgZGF0YS1maXJzdG5hbWU9IkRhbmllbCIgZGF0YS1mbGlnaHQ9IjE0MDc4NDg5ODEiIGRhdGEtZm9yY2Vjb2JyYW5kPSJzdGFuZGFyZCIgZGF0YS1ndWlkPSJRUVZCMlVFTDJDTkxXUFI2U0dDN1JVMzU2TSIgZGF0YS1ob3N0PSJnYW1lcy5zZWFyY2gueWFob28uY29tIiBkYXRhLWh0dHBzPSIwIiBkYXRhLWxhbmd1YWdldGFnPSJlbi11cyIgZGF0YS1wcm9wZXJ0eT0ic3JwIiBkYXRhLXByb3RvY29sPSJodHRwIiBkYXRhLXNob3J0Zmlyc3RuYW1lPSJEYW5pZWwiIGRhdGEtc2hvcnR1c2VyaWQ9ImRhbmllbHRlc3Rlcjc4MyIgZGF0YS1zdGF0dXM9ImFjdGl2ZSIgZGF0YS1zcGFjZWlkPSIyMTQ1ODI5MDc2IiBkYXRhLXRlc3RfaWQ9IiIgZGF0YS11c2VyaWQ9ImRhbmllbHRlc3Rlcjc4MyIgPjwvZGl2PjwhLS0gL21ldGEgLS0+PGRpdiBpZD0ieXVjcy1jb21ldCIgc3R5bGU9ImRpc3BsYXk6bm9uZTsiPjwvZGl2PjxkaXYgaWQ9Inl1Y3MtZGlzY2xhaW1lciIgY2xhc3M9Inl1Y3MtZGlzY2xhaW1lciB5dWNzLWFjdGl2YXRlIHl1Y3MtaGlkZSB5dWNzLXByb3BlcnR5LXNycCB5dWNzLWZjYi0gIiBkYXRhLWRpc2NsYWltZXJ0ZXh0PSJEbyBOb3QgVHJhY2sgaXMgbm8gbG9uZ2VyIGVuYWJsZWQgb24gWWFob28uIFlvdXIgZXhwZXJpZW5jZSBpcyBub3cgcGVyc29uYWxpemVkLiB7ZGlzY2xhaW1lckxpbmt9TW9yZSBpbmZve2xpbmtFbmR9IiBkYXRhLXlsdC1saW5rPSJodHRwOi8vcmkuc2VhcmNoLnlhaG9vLmNvbS9feWx0PUF3ckJFaUlVRXVwVFNna0FCZFBVd09aXy9SVj0yL1JFPTE0MDc4Nzc3ODEvUk89MTAvUlU9aHR0cHMlM2ElMmYlMmZpbmZvLnlhaG9vLmNvbSUyZnByaXZhY3klMmZ1cyUyZnlhaG9vJTJmL1JLPTAvUlM9QklnY0hZVFFyLmphZVFvTHp4eEVydmNacDJ3LSIgZGF0YS15bHQtZGlzY2xhaW1lcmJhcmNsb3NlPSIvO195bHQ9QXdyQkVpSVVFdXBUU2drQUJ0UFV3T1pfIiBkYXRhLXlsdC1kaXNjbGFpbWVyYmFyb3Blbj0iLztfeWx0PUF3ckJFaUlVRXVwVFNna0FCOVBVd09aXyIgZGF0YS1saW5rdGFyZ2V0PSJfdG9wIiBkYXRhLWxhbmc9ImVuLXVzIiBkYXRhLXByb3BlcnR5PSJzcnAiIGRhdGEtZGV2aWNlPSJEZXNrdG9wIiBkYXRhLWNsb3NlLXR4dD0iQ2xvc2UgdGhpcyB3aW5kb3ciPjwvZGl2PjxzdHlsZT4jZG9jLnVoM2xpdGUsIC51aDNsaXRlICN5dWNzSGVhZCwgI3l1Y3NIZWFkLCAjZG9jLnVoM2xpdGUgI2hkIHsKICAgIG1hcmdpbi10b3A6IDAhaW1wb3J0YW50Owp9PC9zdHlsZT48ZGl2IGlkPSJ5dWNzLXRvcC1iYXIiIGNsYXNzPSd5dWNzLXBzJz4gPGRpdiBpZD0neXVjcy10b3AtaW5uZXInPiA8dWwgaWQ9J3l1Y3MtdG9wLWxpc3QnPiA8bGkgaWQ9J3l1Y3MtdG9wLWhvbWUnPjxhIGhyZWY9Imh0dHA6Ly9yaS5zZWFyY2gueWFob28uY29tL195bHQ9QXdyQkVpSVVFdXBUU2drQUNOUFV3T1pfL1JWPTIvUkU9MTQwNzg3Nzc4MS9STz0xMC9SVT1odHRwcyUzYSUyZiUyZnd3dy55YWhvby5jb20lMmYvUks9MC9SUz1BLmMuS1dGSi40Y0Z5SlpJV0Noam1ncVAua0EtIj48c3BhbiBjbGFzcz0ic3AgeXVjcy10b3AtaWNvIj48L3NwYW4+SG9tZTwvYT48L2xpPiA8bGkgaWQ9J3l1Y3MtdG9wLW1haWwnPjxhIGhyZWY9Imh0dHBzOi8vbWFpbC55YWhvby5jb20vO195bHQ9QXdyQkVpSVVFdXBUU2drQUNkUFV3T1pfPy5pbnRsPXVzJi5sYW5nPWVuLVVTJi5zcmM9eW0iPk1haWw8L2E+PC9saT4gPGxpIGlkPSd5dWNzLXRvcC1uZXdzJz48YSBocmVmPSJodHRwOi8vbmV3cy55YWhvby5jb20vO195bHQ9QXdyQkVpSVVFdXBUU2drQUN0UFV3T1pfIj5OZXdzPC9hPjwvbGk+IDxsaSBpZD0neXVjcy10b3Atc3BvcnRzJz48YSBocmVmPSJodHRwOi8vc3BvcnRzLnlhaG9vLmNvbS87X3lsdD1Bd3JCRWlJVUV1cFRTZ2tBQzlQVXdPWl8iPlNwb3J0czwvYT48L2xpPiA8bGkgaWQ9J3l1Y3MtdG9wLWZpbmFuY2UnPjxhIGhyZWY9Imh0dHA6Ly9maW5hbmNlLnlhaG9vLmNvbS87X3lsdD1Bd3JCRWlJVUV1cFRTZ2tBRE5QVXdPWl8iPkZpbmFuY2U8L2E+PC9saT4gPGxpIGlkPSd5dWNzLXRvcC13ZWF0aGVyJz48YSBocmVmPSJodHRwczovL3dlYXRoZXIueWFob28uY29tLztfeWx0PUF3ckJFaUlVRXVwVFNna0FEZFBVd09aXyI+V2VhdGhlcjwvYT48L2xpPiA8bGkgaWQ9J3l1Y3MtdG9wLWdhbWVzJz48YSBocmVmPSJodHRwczovL2dhbWVzLnlhaG9vLmNvbS87X3lsdD1Bd3JCRWlJVUV1cFRTZ2tBRHRQVXdPWl8iPkdhbWVzPC9hPjwvbGk+IDxsaSBpZD0neXVjcy10b3AtZ3JvdXBzJz48YSBocmVmPSJodHRwOi8vcmkuc2VhcmNoLnlhaG9vLmNvbS9feWx0PUF3ckJFaUlVRXVwVFNna0FEOVBVd09aXy9SVj0yL1JFPTE0MDc4Nzc3ODEvUk89MTAvUlU9aHR0cHMlM2ElMmYlMmZncm91cHMueWFob28uY29tJTJmL1JLPTAvUlM9bXJ6Nnd0M2NIVlNyUXFSSmJKWXhiUGJ1NHZjLSI+R3JvdXBzPC9hPjwvbGk+IDxsaSBpZD0neXVjcy10b3AtYW5zd2Vycyc+PGEgaHJlZj0iaHR0cHM6Ly9hbnN3ZXJzLnlhaG9vLmNvbS87X3lsdD1Bd3JCRWlJVUV1cFRTZ2tBRU5QVXdPWl8iPkFuc3dlcnM8L2E+PC9saT4gPGxpIGlkPSd5dWNzLXRvcC1zY3JlZW4nPjxhIGhyZWY9Imh0dHA6Ly9yaS5zZWFyY2gueWFob28uY29tL195bHQ9QXdyQkVpSVVFdXBUU2drQUVkUFV3T1pfL1JWPTIvUkU9MTQwNzg3Nzc4MS9STz0xMC9SVT1odHRwcyUzYSUyZiUyZnNjcmVlbi55YWhvby5jb20lMmYvUks9MC9SUz1QWjVKWG43aVYzTTQ0VWdfeVR4QjlTakFOVU0tIj5TY3JlZW48L2E+PC9saT4gPGxpIGlkPSd5dWNzLXRvcC1mbGlja3InPjxhIGhyZWY9Imh0dHA6Ly9yaS5zZWFyY2gueWFob28uY29tL195bHQ9QXdyQkVpSVVFdXBUU2drQUV0UFV3T1pfL1JWPTIvUkU9MTQwNzg3Nzc4MS9STz0xMC9SVT1odHRwcyUzYSUyZiUyZnd3dy5mbGlja3IuY29tJTJmL1JLPTAvUlM9Y2daYnMxR3V3bEpTbHU5bDZzZFoubk9lZllNLSI+RmxpY2tyPC9hPjwvbGk+IDxsaSBpZD0neXVjcy10b3AtbW9iaWxlJz48YSBocmVmPSJodHRwczovL21vYmlsZS55YWhvby5jb20vO195bHQ9QXdyQkVpSVVFdXBUU2drQUU5UFV3T1pfIiBkYXRhLXlsaz0idDU6bW9iaWxlO3Nsazptb2JpbGU7Ij5Nb2JpbGU8L2E+PC9saT4gPGxpIGlkPSd5dWNzLW1vcmUnIGNsYXNzPSd5dWNzLW1lbnUgeXVjcy1tb3JlLWFjdGl2YXRlJyBkYXRhLXlsdD0iLztfeWx0PUF3ckJFaUlVRXVwVFNna0FGTlBVd09aXyI+PGEgaHJlZj0iIyIgaWQ9J3l1Y3MtbW9yZS1saW5rJyBjbGFzcz0neXVjcy1sZWF2YWJsZSc+TW9yZTxzcGFuIGNsYXNzPSJzcCB5dWNzLXRvcC1pY28iPjwvc3Bhbj48L2E+IDxkaXYgaWQ9J3l1Y3MtdG9wLW1lbnUnPiA8ZGl2IGNsYXNzPSd5dWkzLW1lbnUtY29udGVudCc+IDx1bCBjbGFzcz0neXVjcy1oaWRlIHl1Y3MtbGVhdmFibGUnPiA8bGkgaWQ9J3l1Y3MtdG9wLWNlbGVicml0eSc+PGEgaHJlZj0iaHR0cHM6Ly9jZWxlYnJpdHkueWFob28uY29tLztfeWx0PUF3ckJFaUlVRXVwVFNna0FGZFBVd09aXyI+Q2VsZWJyaXR5PC9hPjwvbGk+IDxsaSBpZD0neXVjcy10b3AtbW92aWVzJz48YSBocmVmPSJodHRwOi8vcmkuc2VhcmNoLnlhaG9vLmNvbS9feWx0PUF3ckJFaUlVRXVwVFNna0FGdFBVd09aXy9SVj0yL1JFPTE0MDc4Nzc3ODEvUk89MTAvUlU9aHR0cHMlM2ElMmYlMmZ3d3cueWFob28uY29tJTJmbW92aWVzL1JLPTAvUlM9YWVMMjMxWWNYUlBVcW1GUWMxQ1BKV2FIbGQ0LSI+TW92aWVzPC9hPjwvbGk+IDxsaSBpZD0neXVjcy10b3AtbXVzaWMnPjxhIGhyZWY9Imh0dHBzOi8vbXVzaWMueWFob28uY29tLztfeWx0PUF3ckJFaUlVRXVwVFNna0FGOVBVd09aXyI+TXVzaWM8L2E+PC9saT4gPGxpIGlkPSd5dWNzLXRvcC10dic+PGEgaHJlZj0iaHR0cHM6Ly90di55YWhvby5jb20vO195bHQ9QXdyQkVpSVVFdXBUU2drQUdOUFV3T1pfIj5UVjwvYT48L2xpPiA8bGkgaWQ9J3l1Y3MtdG9wLWhlYWx0aCc+PGEgaHJlZj0iaHR0cDovL3JpLnNlYXJjaC55YWhvby5jb20vX3lsdD1Bd3JCRWlJVUV1cFRTZ2tBR2RQVXdPWl8vUlY9Mi9SRT0xNDA3ODc3NzgxL1JPPTEwL1JVPWh0dHBzJTNhJTJmJTJmd3d3LnlhaG9vLmNvbSUyZmhlYWx0aC9SSz0wL1JTPVphLkw2a2kxalA4cTYwMWF5Nm54Lnlzd2hqOC0iPkhlYWx0aDwvYT48L2xpPiA8bGkgaWQ9J3l1Y3MtdG9wLWJlYXV0eSc+PGEgaHJlZj0iaHR0cDovL3JpLnNlYXJjaC55YWhvby5jb20vX3lsdD1Bd3JCRWlJVUV1cFRTZ2tBR3RQVXdPWl8vUlY9Mi9SRT0xNDA3ODc3NzgxL1JPPTEwL1JVPWh0dHBzJTNhJTJmJTJmd3d3LnlhaG9vLmNvbSUyZmJlYXV0eS9SSz0wL1JTPWJMc0dSYmZBSTBiXzRyX2tJajdyeXNoMmRjRS0iPkJlYXV0eTwvYT48L2xpPiA8bGkgaWQ9J3l1Y3MtdG9wLWZvb2QnPjxhIGhyZWY9Imh0dHA6Ly9yaS5zZWFyY2gueWFob28uY29tL195bHQ9QXdyQkVpSVVFdXBUU2drQUc5UFV3T1pfL1JWPTIvUkU9MTQwNzg3Nzc4MS9STz0xMC9SVT1odHRwcyUzYSUyZiUyZnd3dy55YWhvby5jb20lMmZmb29kL1JLPTAvUlM9U1lJdmkzNVo3ajF2NWRydXNfMHd6UWtSZFBFLSI+Rm9vZDwvYT48L2xpPiA8bGkgaWQ9J3l1Y3MtdG9wLXRlY2gnPjxhIGhyZWY9Imh0dHA6Ly9yaS5zZWFyY2gueWFob28uY29tL195bHQ9QXdyQkVpSVVFdXBUU2drQUhOUFV3T1pfL1JWPTIvUkU9MTQwNzg3Nzc4MS9STz0xMC9SVT1odHRwcyUzYSUyZiUyZnd3dy55YWhvby5jb20lMmZ0ZWNoL1JLPTAvUlM9RHEudzBIVS43YXFNaEdiTm1yLjR5NjBPMGNrLSI+VGVjaDwvYT48L2xpPiA8bGkgaWQ9J3l1Y3MtdG9wLXNob3BwaW5nJz48YSBocmVmPSJodHRwOi8vc2hvcHBpbmcueWFob28uY29tLztfeWx0PUF3ckJFaUlVRXVwVFNna0FIZFBVd09aXyI+U2hvcHBpbmc8L2E+PC9saT4gPGxpIGlkPSd5dWNzLXRvcC10cmF2ZWwnPjxhIGhyZWY9Imh0dHA6Ly9yaS5zZWFyY2gueWFob28uY29tL195bHQ9QXdyQkVpSVVFdXBUU2drQUh0UFV3T1pfL1JWPTIvUkU9MTQwNzg3Nzc4MS9STz0xMC9SVT1odHRwcyUzYSUyZiUyZnd3dy55YWhvby5jb20lMmZ0cmF2ZWwvUks9MC9SUz15Q2NCQTVLYzlvWlhVX2RRQzBKNnRlakN4NFUtIj5UcmF2ZWw8L2E+PC9saT4gPGxpIGlkPSd5dWNzLXRvcC1hdXRvcyc+PGEgaHJlZj0iaHR0cHM6Ly9hdXRvcy55YWhvby5jb20vO195bHQ9QXdyQkVpSVVFdXBUU2drQUg5UFV3T1pfIj5BdXRvczwvYT48L2xpPiA8bGkgaWQ9J3l1Y3MtdG9wLWhvbWVzJz48YSBocmVmPSJodHRwOi8vcmkuc2VhcmNoLnlhaG9vLmNvbS9feWx0PUF3ckJFaUlVRXVwVFNna0FJTlBVd09aXy9SVj0yL1JFPTE0MDc4Nzc3ODEvUk89MTAvUlU9aHR0cHMlM2ElMmYlMmZob21lcy55YWhvby5jb20lMmYvUks9MC9SUz14UUZBVlFVdVV5QlF6QldVOUs1dHh6dzZ6RmstIj5Ib21lczwvYT48L2xpPiA8L3VsPiA8L2Rpdj4gPC9kaXY+IDwvbGk+IDwvdWw+IDwvZGl2PjwvZGl2PjxkaXYgaWQ9Inl1Y3MiIGNsYXNzPSJ5dWNzIHl1Y3MtbWMgIHlvZy1ncmlkIiBkYXRhLWxhbmc9ImVuLXVzIiBkYXRhLXByb3BlcnR5PSJzcnAiIGRhdGEtZmxpZ2h0PSIxNDA3ODQ4OTgxIiBkYXRhLWxpbmt0YXJnZXQ9Il90b3AiIGRhdGEtdWh2Yz0iLztfeWx0PUF3ckJFaUlVRXVwVFNna0FJZFBVd09aXyI+IDxkaXYgY2xhc3M9Inl1Y3MtZmwtbGVmdCB5b2ctY3AiPiAgICAgPC9kaXY+PGRpdiBjbGFzcz0ieXVjcy1mbC1yaWdodCI+IDxkaXYgaWQ9Inl1Y3MtcHJvZmlsZSIgY2xhc3M9Inl1Y3MtYWN0aXZhdGUgeXVjcy1wcm9maWxlIHl1Y3MtbWVudV9uYXYiPiA8YSBpZD0ieXVjcy1tZW51X2xpbmtfcHJvZmlsZSIgY2xhc3M9Inl1Y3Mtc3VibWVudS10b2dnbGUgeXVjcy11bS1hY3RpdmF0ZSIgaHJlZj0iaHR0cDovL3JpLnNlYXJjaC55YWhvby5jb20vX3lsdD1Bd3JCRWlJVUV1cFRTZ2tBSXRQVXdPWl8vUlY9Mi9SRT0xNDA3ODc3NzgxL1JPPTEwL1JVPWh0dHAlM2ElMmYlMmZwcm9maWxlLnlhaG9vLmNvbSUyZi9SSz0wL1JTPVdER3BSdGRfVlh6T1Y5b3g3WkZTTnJQQl8uay0iIHRhcmdldD0iX3RvcCIgcmVsPSJub2ZvbGxvdyIgYXJpYS1sYWJlbD0iUHJvZmlsZSI+IDxzcGFuIGNsYXNzPSJ5dWNzLWF2YXRhciB5dWNzLWF2LWFjdGl2YXRlIHl1Y3MtbWVudV9hbmNob3IiIGRhdGEtdXNlcj0iRGFuaWVsIiBkYXRhLXByb2Y9IkF2YXRhciIgZGF0YS1jcnVtYj0iZ2Y3OGhyQ1M0aTkiIGRhdGEtZ3VpZD0iUVFWQjJVRUwyQ05MV1BSNlNHQzdSVTM1Nk0iPjwvc3Bhbj48c3BhbiBpZD0ieXVjcy1wcm9maWxlX3RleHQiPjxzcGFuIGNsYXNzPSJ5dWhlYWQtbmFtZS1ncmVldGluZyB5dWNzLWZjIj5IaSwmbmJzcDs8L3NwYW4+PHNwYW4gY2xhc3M9Inl1aGVhZC1uYW1lIHl1Y3MtZmMiPkRhbmllbDwvc3Bhbj48L3NwYW4+IDwvYT4gPG5vc2NyaXB0IGNsYXNzPSJ5dWNzLW5vc2NyaXB0Ij48c3BhbiBjbGFzcz0ieXVjcy1ub19tZW51Ij48YSBjbGFzcz0ieXVjcy1zaWdub3V0IiBocmVmPSJodHRwczovL2xvZ2luLnlhaG9vLmNvbS9jb25maWcvbG9naW47X3lsdD1Bd3JCRWlJVUV1cFRTZ2tBSTlQVXdPWl8/bG9nb3V0PTEmLmRpcmVjdD0yJmFtcDsuc3JjPSZhbXA7LmludGw9dXMmYW1wOy5sYW5nPWVuLVVTJi5kb25lPWh0dHA6Ly9nYW1lcy5zZWFyY2gueWFob28uY29tL3NlYXJjaCIgdGFyZ2V0PSJfdG9wIiByZWw9Im5vZm9sbG93Ij4gU2lnbiBPdXQ8L2E+PC9zcGFuPjwvbm9zY3JpcHQ+IDxkaXYgaWQ9Inl1Y3MtcHJvZmlsZV9pbm5lciIgY2xhc3M9Inl1Y3MtaGlkZSB5dWNzLW1lbnUiIGRhdGEteWx0LXByb2ZpbGU9Ii87X3lsdD1Bd3JCRWlJVUV1cFRTZ2tBSk5QVXdPWl8iIGRhdGEteWx0bWVudXNob3duPSIvO195bHQ9QXdyQkVpSVVFdXBUU2drQUpkUFV3T1pfIj4gPHNwYW4gY2xhc3M9InNwIHl1Y3MtZG9jayI+PC9zcGFuPiA8dWwgY2xhc3M9Inl1Y3MtcHJvZmlsZS1pdGVtcy1wYW5lbCIgcm9sZT0ibWVudSI+IDxsaT48ZGl2IGNsYXNzPSJ5dWNzLXNpZ25lZF9pbl9hcyI+U2lnbmVkIGluIGFzOjxiciAvPjxzcGFuIGNsYXNzPSJ5dWhlYWQteWlkIGVsbGlwc2VzIj5kYW5pZWx0ZXN0ZXI3ODM8L3NwYW4+PC9kaXY+PC9saT4gPHNwYW4gaWQ9Inl1Y3MtbXktc2F2ZXMtc2VwIiBjbGFzcz0ieXVjcy1zZXBhcmF0b3IiIHJvbGU9InByZXNlbnRhdGlvbiI+PC9zcGFuPjxsaT4gPGRpdiBjbGFzcz0ieXVjcy1teS1zYXZlcyI+IDxhIGhyZWY9Imh0dHA6Ly9yaS5zZWFyY2gueWFob28uY29tL195bHQ9QXdyQkVpSVVFdXBUU2drQUp0UFV3T1pfL1JWPTIvUkU9MTQwNzg3Nzc4MS9STz0xMC9SVT1odHRwcyUzYSUyZiUyZnd3dy55YWhvby5jb20lMmZteXNhdmVzL1JLPTAvUlM9WkhKSXMublk2X2M1Y1MyUHQzNHh0aElMcl84LSIgdGFyZ2V0PSJfdG9wIj4gTXkgU2F2ZXMgPC9hPiA8L2Rpdj48L2xpPiA8c3BhbiBjbGFzcz0ieXVjcy1zZXBhcmF0b3IiIHJvbGU9InByZXNlbnRhdGlvbiI+PC9zcGFuPiA8bGk+PGEgaHJlZj0iaHR0cDovL3JpLnNlYXJjaC55YWhvby5jb20vX3lsdD1Bd3JCRWlJVUV1cFRTZ2tBSjlQVXdPWl8vUlY9Mi9SRT0xNDA3ODc3NzgxL1JPPTEwL1JVPWh0dHAlM2ElMmYlMmZwcm9maWxlLnlhaG9vLmNvbSUyZi9SSz0wL1JTPVdER3BSdGRfVlh6T1Y5b3g3WkZTTnJQQl8uay0iIHRhcmdldD0iX3RvcCI+UHJvZmlsZTwvYT48L2xpPiAgPHNwYW4gY2xhc3M9Inl1Y3Mtc2VwYXJhdG9yIiByb2xlPSJwcmVzZW50YXRpb24iPjwvc3Bhbj4gPGxpPjxhIGNsYXNzPSJ5dWNzLXNpZ25vdXQiIGhyZWY9Imh0dHBzOi8vbG9naW4ueWFob28uY29tL2NvbmZpZy9sb2dpbjtfeWx0PUF3ckJFaUlVRXVwVFNna0FLTlBVd09aXz9sb2dvdXQ9MSYuZGlyZWN0PTImYW1wOy5zcmM9JmFtcDsuaW50bD11cyZhbXA7Lmxhbmc9ZW4tVVMmLmRvbmU9aHR0cDovL2dhbWVzLnNlYXJjaC55YWhvby5jb20vc2VhcmNoIiB0YXJnZXQ9Il90b3AiIHJlbD0ibm9mb2xsb3ciPiBTaWduIE91dDwvYT48L2xpPiA8L3VsPiA8L2Rpdj48L2Rpdj4gPGRpdiBjbGFzcz0ieXVjcy1tYWlsX2xpbmsgeXVjcy1tYWlscHJldmlldy1hbmNlc3RvciI+PGEgaWQ9Inl1Y3MtbWFpbF9saW5rX2lkIiBjbGFzcz0ic3AgeWx0YXNpcyB5dWNzLWZjIiBocmVmPSJodHRwczovL21haWwueWFob28uY29tLztfeWx0PUF3ckJFaUlVRXVwVFNna0FLZFBVd09aXz8uaW50bD11cyYubGFuZz1lbi1VUyYuc3JjPXltIiByZWw9Im5vZm9sbG93IiB0YXJnZXQ9Il90b3AiPiBNYWlsIDxzcGFuIGNsYXNzPSJ5dWNzLWFjdGl2YXRlIHl1Y3MtbWFpbC1jb3VudCB5dWNzLWhpZGUgeXVjcy1hbGVydC1jb3VudC1jb24iIGRhdGEtdXJpLXNjaGVtZT0iaHR0cHMiIGRhdGEtdXJpLXBhdGg9Im1nLm1haWwueWFob28uY29tL21haWxzZXJ2aWNlcy92MS9uZXdtYWlsY291bnQiIGRhdGEtYXV0aHN0YXRlPSJtaWRkbGVhdXRoIiBkYXRhLWNydW1iPSJnZjc4aHJDUzRpOSIgZGF0YS1tYy1jcnVtYj0iZklVNk9xc3ZUQnMiPjxzcGFuIGNsYXNzPSJ5dWNzLWFsZXJ0LWNvdW50Ij48L3NwYW4+PC9zcGFuPjwvYT48ZGl2IGNsYXNzPSJ5dWNzLW1haWwtcHJldmlldy1wYW5lbCB5dWNzLW1lbnUgeXVjcy1oaWRlIiBkYXRhLW1haWwtdHh0PSJNYWlsIiBkYXRhLXVyaS1zY2hlbWU9Imh0dHAiIGRhdGEtdXJpLXBhdGg9InVjcy5xdWVyeS55YWhvby5jb20vdjEvY29uc29sZS95cWwiIGRhdGEtbWFpbC12aWV3PSJHbyB0byBNYWlsIiBkYXRhLW1haWwtaGVscC10eHQ9IkhlbHAiIGRhdGEtbWFpbC1oZWxwLXVybD0iaHR0cDovL2hlbHAueWFob28uY29tL2wvdXMveWFob28vbWFpbC95bWFpbC8iIGRhdGEtbWFpbC1sb2FkaW5nLXR4dD0iTG9hZGluZy4uLiIgZGF0YS1sYW5ndWFnZXRhZz0iZW4tdXMiIGRhdGEtbXJkLWNydW1iPSJoNGlFbWhVMWNlaCIgZGF0YS1hdXRoc3RhdGU9Im1pZGRsZWF1dGgiIGRhdGEtbWlkZGxlYXV0aC1zaWduaW4tdGV4dD0iQ2xpY2sgaGVyZSB0byB2aWV3IHlvdXIgbWFpbCIgZGF0YS1wb3B1cC1sb2dpbi11cmw9Imh0dHBzOi8vbG9naW4ueWFob28uY29tL2NvbmZpZy9sb2dpbl92ZXJpZnkyPy5wZD1jJTNET0lWYU9HcTYyZTVoQVA4VHYuLm5yNUUzJi5zcmM9c2MiIGRhdGEtbWlkZGxlYXV0aHRleHQ9IllvdSBoYXZlIHtjb3VudH0gbmV3IG1lc3NhZ2VzLiIgZGF0YS15bHRtZXNzYWdlLWxpbms9Imh0dHA6Ly9tcmQubWFpbC55YWhvby5jb20vbXNnO195bHQ9QXdyQkVpSVVFdXBUU2drQUt0UFV3T1pfP21pZD17bXNnSUR9JmZpZD1JbmJveCZzcmM9dWgmLmNydW1iPWg0aUVtaFUxY2VoIiBkYXRhLXlsdHZpZXdhbGwtbGluaz0iaHR0cHM6Ly9tYWlsLnlhaG9vLmNvbS87X3lsdD1Bd3JCRWlJVUV1cFRTZ2tBSzlQVXdPWl8iIGRhdGEteWx0cGFuZWxzaG93bj0iLztfeWx0PUF3ckJFaUlVRXVwVFNna0FMTlBVd09aXyIgZGF0YS15bHRlcnJvcj0iLztfeWx0PUF3ckJFaUlVRXVwVFNna0FMZFBVd09aXyIgZGF0YS15bHR0aW1lb3V0PSIvO195bHQ9QXdyQkVpSVVFdXBUU2drQUx0UFV3T1pfIiBkYXRhLWdlbmVyaWMtZXJyb3I9IldlJ3JlIHVuYWJsZSB0byBwcmV2aWV3IHlvdXIgbWFpbC48YnI+R28gdG8gTWFpbC4iIGRhdGEtbm9zdWJqZWN0PSJbTm8gU3ViamVjdF0iIGRhdGEtdGltZXN0YW1wPSdzaG9ydCc+PC9kaXY+PC9kaXY+IDxkaXYgaWQ9Inl1Y3MtaGVscCIgY2xhc3M9Inl1Y3MtYWN0aXZhdGUgeXVjcy1oZWxwIHl1Y3MtbWVudV9uYXYiPiA8YSBpZD0ieXVjcy1oZWxwX2J1dHRvbiIgY2xhc3M9InNwIHlsdGFzaXMiIGhyZWY9ImphdmFzY3JpcHQ6dm9pZCgwKTsiIGFyaWEtbGFiZWw9IkhlbHAiIHJlbD0ibm9mb2xsb3ciPiA8ZW0gY2xhc3M9Inl1Y3MtaGlkZSB5dWNzLW1lbnVfYW5jaG9yIj5IZWxwPC9lbT4gPC9hPiA8ZGl2IGlkPSJ5dWNzLWhlbHBfaW5uZXIiIGNsYXNzPSJ5dWNzLWhpZGUgeXVjcy1tZW51IHl1Y3MtaG0tYWN0aXZhdGUiIGRhdGEteWx0bWVudXNob3duPSIvO195bHQ9QXdyQkVpSVVFdXBUU2drQUw5UFV3T1pfIj4gPHNwYW4gY2xhc3M9InNwIHl1Y3MtZG9jayI+PC9zcGFuPiA8ZGl2IGNsYXNzPSJ5dWNzLXlxbF9sb2FkaW5nIj4gPHVsIGlkPSJ5dWhlYWQtaGVscC1wYW5lbCI+IDxsaT48YSBjbGFzcz0ieXVjcy1hY2N0LWxpbmsiIGhyZWY9Imh0dHA6Ly9yaS5zZWFyY2gueWFob28uY29tL195bHQ9QXdyQkVpSVVFdXBUU2drQU1OUFV3T1pfL1JWPTIvUkU9MTQwNzg3Nzc4MS9STz0xMC9SVT1odHRwcyUzYSUyZiUyZmVkaXQueWFob28uY29tJTJmbWMyLjAlMmZldmFsX3Byb2ZpbGUlM2YuaW50bCUzZHVzJTI2LmxhbmclM2Rlbi1VUyUyNi5kb25lJTNkaHR0cCUzYSUyZiUyZmdhbWVzLnNlYXJjaC55YWhvby5jb20lMmZzZWFyY2glMjZhbXAlM2Iuc3JjJTNkJTI2YW1wJTNiLmludGwlM2R1cyUyNmFtcCUzYi5sYW5nJTNkZW4tVVMvUks9MC9SUz0uZWhmQzZPRjNlUm1yNEx5RDRrM0FPVXVDXzgtIiB0YXJnZXQ9Il90b3AiPkFjY291bnQgSW5mbzwvYT48L2xpPiAgPC91bD4gPC9kaXY+IDwvZGl2PjwvZGl2PiA8ZGl2IGlkPSJ5dWNzLW5ldHdvcmtfbGluayI+PGEgaWQ9Inl1Y3MtaG9tZV9saW5rIiBocmVmPSJodHRwOi8vcmkuc2VhcmNoLnlhaG9vLmNvbS9feWx0PUF3ckJFaUlVRXVwVFNna0FNZFBVd09aXy9SVj0yL1JFPTE0MDc4Nzc3ODEvUk89MTAvUlU9aHR0cHMlM2ElMmYlMmZ3d3cueWFob28uY29tJTJmL1JLPTAvUlM9QS5jLktXRkouNGNGeUpaSVdDaGptZ3FQLmtBLSIgcmVsPSJub2ZvbGxvdyIgdGFyZ2V0PSJfdG9wIj48ZW0gY2xhc3M9InNwIj5ZYWhvbzwvZW0+PHNwYW4gY2xhc3M9Inl1Y3MtZmMiPkhvbWU8L3NwYW4+PC9hPjwvZGl2PiAgPGRpdiBpZD0ieXVjcy1ibmV3cyIgY2xhc3M9Inl1Y3MtYWN0aXZhdGUgc2xpZGUgeXVjcy1oaWRlIiBkYXRhLWxpbmt0YXJnZXQ9Il90b3AiIGRhdGEtYXV0aHN0YXRlPSJtaWRkbGVhdXRoIiBkYXRhLWRlZmxpbms9Imh0dHA6Ly9uZXdzLnlhaG9vLmNvbSIgZGF0YS1kZWZsaW5rdGV4dD0iVmlzaXQgWWFob28gTmV3cyBmb3IgdGhlIGxhdGVzdC4iIGRhdGEtdGl0bGU9IkJyZWFraW5nIE5ld3MiIGRhdGEtY2xvc2U9IkNsb3NlIHRoaXMgd2luZG93IiBkYXRhLWxhbmc9ImVuLXVzIiBkYXRhLXByb3BlcnR5PSJzcnAiPjwvZGl2PiAgICAgIDwvZGl2PiAgIDwvZGl2PiA8IS0tIGNvbnRleHR1YWxfc2hvcnRjdXRzIC0tPjwhLS0gL2NvbnRleHR1YWxfc2hvcnRjdXRzIC0tPjwhLS0gcHJvcGVydHk6IHNycCB8IGxhbmd1YWdldGFnOiBlbi11cyB8IHN0YXR1czogYWN0aXZlIHwgc3BhY2VpZDogMjE0NTgyOTA3NiB8IGNvYnJhbmQ6IHN0YW5kYXJkIHwgbWFya3VwOiBlbXB0eSAtLT48IS0tIGFsZXJ0IC0tPjwhLS0gL2FsZXJ0IC0tPjxkaXYgaWQ9InlVbml2SGVhZCIgY2xhc3M9Inl1Y3MtaGlkZSI+PCEtLSBlbXB0eSAtLT48L2Rpdj48L2Rpdj48c3BhbiBpZD0iYmItZGVzYyIgdGl0bGU9IiI+PC9zcGFuPiA8YSBocmVmPSJodHRwOi8vZ2FtZXMuc2VhcmNoLnlhaG9vLmNvbS9zZWFyY2g/cD1hbGVydCUyODE0MiUyOSUzQiUyOCZmcj1zZnBhbGVydCUyODE0MiUyOSUzQiUyOCZmcjI9YWxlcnQlMjgxNDIlMjklM0IlMjgmbm9xdD0xIiBpZD0iYmItaGlkZSIgdGl0bGU9IkNsaWNrIGhlcmUgdG8gaGlkZSB0aGlzIGJhciI+W2hpZGVdPC9hPjwvZGl2PjxkaXYgaWQ9ImhkIj48YSBpZD0ibG9nbyIgaHJlZj0iaHR0cDovL2dhbWVzLnlhaG9vLmNvbS87X3lsdD1Bd3JCRWlJVUV1cFRTZ2tBTXRQVXdPWl8iPllhaG9vITwvYT48ZGl2IGNsYXNzPSJzYngiPjxmb3JtIG1ldGhvZD0iZ2V0IiBuYW1lPSJzIiBpZD0ic2YiIHJvbGU9InNlYXJjaCIgYWN0aW9uPSJodHRwOi8vZ2FtZXMuc2VhcmNoLnlhaG9vLmNvbS9zZWFyY2g7X3lsdD1Bd3JCRWlJVUV1cFRTZ2tBTTlQVXdPWl8iYWNjZXB0LWNoYXJzZXQ9InV0Zi04Ij48bGFiZWwgZm9yPSJ5c2Noc3AiIGNsYXNzPSJvZmYtbGVmdCI+U2VhcmNoIHF1ZXJ5PC9sYWJlbD48ZGl2IGlkPSJzYnEtd3JhcCIgY2xhc3M9InNicS13Ij48aW5wdXQgdHlwZT0idGV4dCIgY2xhc3M9InNicSIgaWQ9InlzY2hzcCIgbmFtZT0icCIgdmFsdWU9InV4dG1uLyoiIGF1dG9jb21wbGV0ZT0ib2ZmIiB0YWJpbmRleD0iMSI+PC9kaXY+PGJ1dHRvbiBpZD0ic2JxLWNsZWFyIiB0eXBlPSJidXR0b24iIGNsYXNzPSJzYnEteCI+PHNwYW4gY2xhc3M9InNwcml0ZSI+PC9zcGFuPjwvYnV0dG9uPjxpbnB1dCB0eXBlPSJzdWJtaXQiIGNsYXNzPSJzYmIiIHZhbHVlPSJTZWFyY2giIHRhYmluZGV4PSIyIj48aW5wdXQgdHlwZT0iaGlkZGVuIiBuYW1lPSJmcjIiIHZhbHVlPSJzYi10b3AiPjxpbnB1dCB0eXBlPSJoaWRkZW4iIG5hbWU9ImZyIiB2YWx1ZT0ic2ZwdXh0bW4vKiI+PC9mb3JtPjwvZGl2PjwvZGl2PjxkaXYgaWQ9ImJkIiByb2xlPSJkb2N1bWVudCI+PGRpdiBpZD0ic2lkZWJhciI+PGRpdiBjbGFzcz0iYmQiPjx1bCBpZD0idmVydGljYWxfcGl2b3RfdGFicyI+PGxpIGNsYXNzPSJwaXZvdCBwaXYtMDAwIGRlZmF1bHRfc2hvdyI+PGEgaHJlZj0iaHR0cDovL3NlYXJjaC55YWhvby5jb20vc2VhcmNoO195bHQ9QXdyQkVpSVVFdXBUU2drQU5OUFV3T1pfPyZwPWFsZXJ0JTI4MTQyJTI5JTNCJTI4JmZyMj1waXYtZ2FtZXMmZnI9c2ZwYWxlcnQlMjgxNDIlMjklM0IlMjgiPldlYjwvYT48L2xpPjxsaSBjbGFzcz0icGl2b3QgcGl2LTAzMCBkZWZhdWx0X3Nob3ciPjxzcGFuIGNsYXNzPSJhY3RpdmUiPkdhbWVzPC9zcGFuPjwvbGk+PGxpIGNsYXNzPSJwaXZvdCBwaXYtMDAxIGRlZmF1bHRfaGlkZSI+PGEgaHJlZj0iaHR0cDovL2ltYWdlcy5zZWFyY2gueWFob28uY29tL3NlYXJjaC9pbWFnZXM7X3lsdD1Bd3JCRWlJVUV1cFRTZ2tBTmRQVXdPWl8/JnA9YWxlcnQlMjgxNDIlMjklM0IlMjgmZnIyPXBpdi1nYW1lcyZmcj1zZnBhbGVydCUyODE0MiUyOSUzQiUyOCI+SW1hZ2VzPC9hPjwvbGk+PGxpIGNsYXNzPSJwaXZvdCBwaXYtMDAyIGRlZmF1bHRfaGlkZSI+PGEgaHJlZj0iaHR0cDovL3ZpZGVvLnNlYXJjaC55YWhvby5jb20vc2VhcmNoL3ZpZGVvO195bHQ9QXdyQkVpSVVFdXBUU2drQU50UFV3T1pfPyZwPWFsZXJ0JTI4MTQyJTI5JTNCJTI4JmZyMj1waXYtZ2FtZXMmZnI9c2ZwYWxlcnQlMjgxNDIlMjklM0IlMjgiPlZpZGVvPC9hPjwvbGk+PGxpIGNsYXNzPSJwaXZvdCBwaXYtMDAzIGRlZmF1bHRfaGlkZSI+PGEgaHJlZj0iaHR0cDovL25ld3Muc2VhcmNoLnlhaG9vLmNvbS9zZWFyY2g7X3lsdD1Bd3JCRWlJVUV1cFRTZ2tBTjlQVXdPWl8/JnA9YWxlcnQlMjgxNDIlMjklM0IlMjgmZnIyPXBpdi1nYW1lcyZmcj1zZnBhbGVydCUyODE0MiUyOSUzQiUyOCI+TmV3czwvYT48L2xpPjxsaSBjbGFzcz0icGl2b3QgcGl2LTAwNiBkZWZhdWx0X2hpZGUiPjxhIGhyZWY9Imh0dHA6Ly9zZWFyY2gueWFob28uY29tL2xvY2FsL3M7X3lsdD1Bd3JCRWlJVUV1cFRTZ2tBT05QVXdPWl8/JnA9YWxlcnQlMjgxNDIlMjklM0IlMjgmZnIyPXBpdi1nYW1lcyZmcj1zZnBhbGVydCUyODE0MiUyOSUzQiUyOCI+TG9jYWw8L2E+PC9saT48bGkgY2xhc3M9InBpdm90IHBpdi0wMDcgZGVmYXVsdF9oaWRlIj48YSBocmVmPSJodHRwOi8vc2hvcHBpbmcuc2VhcmNoLnlhaG9vLmNvbS9zZWFyY2g7X3lsdD1Bd3JCRWlJVUV1cFRTZ2tBT2RQVXdPWl8/JnA9YWxlcnQlMjgxNDIlMjklM0IlMjgmZnIyPXBpdi1nYW1lcyZmcj1zZnBhbGVydCUyODE0MiUyOSUzQiUyOCI+U2hvcHBpbmc8L2E+PC9saT48bGkgY2xhc3M9InBpdm90IHBpdi0wMjYgZGVmYXVsdF9oaWRlIj48YSBocmVmPSJodHRwOi8vbWFwcy55YWhvby5jb20vc2VhcmNoL21hcHM7X3lsdD1Bd3JCRWlJVUV1cFRTZ2tBT3RQVXdPWl8/JnA9YWxlcnQlMjgxNDIlMjklM0IlMjgmZnIyPXBpdi1nYW1lcyZmcj1zZnBhbGVydCUyODE0MiUyOSUzQiUyOCI+TWFwczwvYT48L2xpPjxsaSBjbGFzcz0icGl2b3QgcGl2LTAzMSBkZWZhdWx0X2hpZGUiPjxhIGhyZWY9Imh0dHA6Ly9hdXRvcy5zZWFyY2gueWFob28uY29tL3NlYXJjaDtfeWx0PUF3ckJFaUlVRXVwVFNna0FPOVBVd09aXz8mcD1hbGVydCUyODE0MiUyOSUzQiUyOCZmcjI9cGl2LWdhbWVzJmZyPXNmcGFsZXJ0JTI4MTQyJTI5JTNCJTI4Ij5BdXRvczwvYT48L2xpPjxsaSBjbGFzcz0icGl2b3QgcGl2LTAxNiBkZWZhdWx0X2hpZGUiPjxhIGhyZWY9Imh0dHA6Ly9yZWNpcGVzLnNlYXJjaC55YWhvby5jb20vc2VhcmNoO195bHQ9QXdyQkVpSVVFdXBUU2drQVBOUFV3T1pfPyZwPWFsZXJ0JTI4MTQyJTI5JTNCJTI4JmZyMj1waXYtZ2FtZXMmZnI9c2ZwYWxlcnQlMjgxNDIlMjklM0IlMjgiPlJlY2lwZXM8L2E+PC9saT48bGkgY2xhc3M9InBpdm90IHBpdi0wMDQgZGVmYXVsdF9oaWRlIj48YSBocmVmPSJodHRwOi8vc3BvcnRzLnNlYXJjaC55YWhvby5jb20vc2VhcmNoO195bHQ9QXdyQkVpSVVFdXBUU2drQVBkUFV3T1pfPyZwPWFsZXJ0JTI4MTQyJTI5JTNCJTI4JmZyMj1waXYtZ2FtZXMmZnI9c2ZwYWxlcnQlMjgxNDIlMjklM0IlMjgiPlNwb3J0czwvYT48L2xpPjxsaSBjbGFzcz0icGl2b3QgcGl2LTAwNSBkZWZhdWx0X2hpZGUiPjxhIGhyZWY9Imh0dHA6Ly9maW5hbmNlLnNlYXJjaC55YWhvby5jb20vc2VhcmNoO195bHQ9QXdyQkVpSVVFdXBUU2drQVB0UFV3T1pfPyZwPWFsZXJ0JTI4MTQyJTI5JTNCJTI4JmZyMj1waXYtZ2FtZXMmZnI9c2ZwYWxlcnQlMjgxNDIlMjklM0IlMjgiPkZpbmFuY2U8L2E+PC9saT48bGkgY2xhc3M9InBpdm90IHBpdi0wMTAgZGVmYXVsdF9oaWRlIj48YSBocmVmPSJodHRwOi8vbW92aWVzLnNlYXJjaC55YWhvby5jb20vc2VhcmNoO195bHQ9QXdyQkVpSVVFdXBUU2drQVA5UFV3T1pfPyZwPWFsZXJ0JTI4MTQyJTI5JTNCJTI4JmZyMj1waXYtZ2FtZXMmZnI9c2ZwYWxlcnQlMjgxNDIlMjklM0IlMjgiPk1vdmllczwvYT48L2xpPjxsaSBjbGFzcz0icGl2b3QgcGl2LTAxNyBkZWZhdWx0X2hpZGUiPjxhIGhyZWY9Imh0dHA6Ly9jZWxlYnJpdHkuc2VhcmNoLnlhaG9vLmNvbS9zZWFyY2g7X3lsdD1Bd3JCRWlJVUV1cFRTZ2tBUU5QVXdPWl8/JnA9YWxlcnQlMjgxNDIlMjklM0IlMjgmZnIyPXBpdi1nYW1lcyZmcj1zZnBhbGVydCUyODE0MiUyOSUzQiUyOCI+Q2VsZWJyaXR5PC9hPjwvbGk+PGxpIGNsYXNzPSJwaXZvdCBwaXYtMDIxIGRlZmF1bHRfaGlkZSI+PGEgaHJlZj0iaHR0cDovL2RpY3Rpb25hcnkuc2VhcmNoLnlhaG9vLmNvbS9zZWFyY2g7X3lsdD1Bd3JCRWlJVUV1cFRTZ2tBUWRQVXdPWl8/JnA9YWxlcnQlMjgxNDIlMjklM0IlMjgmZnIyPXBpdi1nYW1lcyZmcj1zZnBhbGVydCUyODE0MiUyOSUzQiUyOCI+RGljdGlvbmFyeTwvYT48L2xpPjxsaSBjbGFzcz0icGl2b3QgcGl2LTAxMiBkZWZhdWx0X2hpZGUiPjxhIGhyZWY9Imh0dHA6Ly9kaXIuc2VhcmNoLnlhaG9vLmNvbS9zZWFyY2g7X3lsdD1Bd3JCRWlJVUV1cFRTZ2tBUXRQVXdPWl8/JnA9YWxlcnQlMjgxNDIlMjklM0IlMjgmZnIyPXBpdi1nYW1lcyZmcj1zZnBhbGVydCUyODE0MiUyOSUzQiUyOCI+RGlyZWN0b3J5PC9hPjwvbGk+PGxpIGNsYXNzPSJ0b2dnbGUgbW9yZSBsYXN0IG9uIj48YSBocmVmPSIjIj5Nb3JlPC9hPjwvbGk+PGxpIGNsYXNzPSJ0b2dnbGUgbGVzcyBsYXN0Ij48YSBocmVmPSIjIj5MZXNzPC9hPjwvbGk+PC91bD48L2Rpdj48L2Rpdj48ZGl2IGlkPSJyZXN1bHRzIj48c3R5bGUgdHlwZT0idGV4dC9jc3MiPi5zYyBjaXRle2NvbG9yOiNBQkFFQjc7Zm9udC1zaXplOjg1JX0uc2MgLnNjLXVybHtjb2xvcjojMUU3RDgzO2ZvbnQtd2VpZ2h0OmJvbGR9LnNjIC50aW1lc3RhbXB7Y29sb3I6I0FCQUVCN30uc2MgLnNjLXVybCBhe2NvbG9yOiM4Mjg0Y2N9LnNjIC5zYy1saW5rcyBsaXtkaXNwbGF5OmlubGluZTtwYWRkaW5nOjAgOHB4O2xpbmUtaGVpZ2h0OjEuNWVtfS5zYyAuc2MtbGlua3MgLmZzdHtib3JkZXItbGVmdDpub25lO3BhZGRpbmctbGVmdDowfS5zYyAuc2MtZnR7Y2xlYXI6Ym90aH0uenJwLC56cnBtc2d7Zm9udC1zaXplOjE2cHg7Y29sb3I6IzVmNWY1ZjtwYWRkaW5nOjA7bWFyZ2luLWxlZnQ6MTBweDttYXJnaW4tcmlnaHQ6MTBweH0uenJwbXNnIHN0cm9uZ3tjb2xvcjojM2YzZjNmfS56cnBtc2d7bGluZS1oZWlnaHQ6MjBweDt3b3JkLXdyYXA6YnJlYWstd29yZDttYXJnaW4tYm90dG9tOjI3cHh9LnpycHtwYWRkaW5nLWJvdHRvbToyMHB4fS56cnAuaGVscHtib3JkZXI6MXB4IHNvbGlkICNjY2M7Ym9yZGVyLWxlZnQ6MDtib3JkZXItcmlnaHQ6MDttYXJnaW46MWVtIDExcHg7cGFkZGluZzo1cHg7dGV4dC1hbGlnbjpjZW50ZXJ9LnpycCB1bHttYXJnaW4tdG9wOjEwcHg7cGFkZGluZy1sZWZ0OjM4cHh9LnpycCBsaXtmb250LXNpemU6MTNweDtsaW5lLWhlaWdodDoxN3B4O2xpc3Qtc3R5bGUtdHlwZTpkaXNjfS5keW17cGFkZGluZy1sZWZ0OjB9LmR5bSBpe2ZvbnQtc3R5bGU6aXRhbGljO2ZvbnQtd2VpZ2h0OmJvbGR9PC9zdHlsZT48ZGl2IGlkPSJjb2xzIj48ZGl2IGlkPSJsZWZ0Ij48ZGl2IGlkPSJtYWluIj48cCBjbGFzcz0ibXNnIHpycG1zZyI+V2UgZGlkIG5vdCBmaW5kIHJlc3VsdHMgZm9yOiA8c3Ryb25nPnV4dG1uLyo8L3N0cm9uZz4uIFRyeSB0aGUgc3VnZ2VzdGlvbnMgYmVsb3cgb3IgdHlwZSBhIG5ldyBxdWVyeSBhYm92ZS48L3A+PGRpdiBjbGFzcz0ienJwIj48cD5TdWdnZXN0aW9uczo8L3A+PHVsPjxsaT5DaGVjayB5b3VyIHNwZWxsaW5nLjwvbGk+PGxpPlRyeSBtb3JlIGdlbmVyYWwgd29yZHMuPC9saT48bGk+VHJ5IGRpZmZlcmVudCB3b3JkcyB0aGF0IG1lYW4gdGhlIHNhbWUgdGhpbmcuPC9saT48bGkgaWQ9ImFuc190aXAiPlRyeSBhc2tpbmcgYSBxdWVzdGlvbiBvbiA8YSBocmVmPSJodHRwOi8vYW5zd2Vycy55YWhvby5jb20vO195bHQ9QXdyQkVpSVVFdXBUU2drQVE5UFV3T1pfIj5ZYWhvbyBBbnN3ZXJzPC9hPjwvbGk+PGxpIGlkPSJobHBfdGlwIj5Gb3IgaGVscGZ1bCB0aXBzIG9uIHNlYXJjaGluZywgdmlzaXQgdGhlIDxhIGhyZWY9Imh0dHA6Ly9oZWxwLnlhaG9vLmNvbS9sL3VzL3lhaG9vL3NlYXJjaC9iYXNpY3MvO195bHQ9QXdyQkVpSVVFdXBUU2drQVJOUFV3T1pfIj5ZYWhvbyBTZWFyY2ggSGVscCBDZW50ZXI8L2E+LjwvbGk+PC91bD48L2Rpdj48L2Rpdj48L2Rpdj48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSJiZGMiPjxkaXYgaWQ9ImZ0IiByb2xlPSJjb250ZW50aW5mbyI+PHVsPjxsaSBjbGFzcz0iY29weXJpZ2h0Ij5ZYWhvbzwvbGk+PGxpPjxhIGhyZWY9Imh0dHA6Ly9oZWxwLnlhaG9vLmNvbS9sL3VzL3lhaG9vL3NlYXJjaC87X3lsdD1Bd3JCRWlJVUV1cFRTZ2tBUmRQVXdPWl8iPkhlbHA8L2E+PC9saT48bGk+PGEgaHJlZj0iaHR0cDovL3JpLnNlYXJjaC55YWhvby5jb20vX3lsdD1Bd3JCRWlJVUV1cFRTZ2tBUnRQVXdPWl8vUlY9Mi9SRT0xNDA3ODc3NzgxL1JPPTEwL1JVPWh0dHAlM2ElMmYlMmZpbmZvLnlhaG9vLmNvbSUyZnByaXZhY3klMmZ1cyUyZnlhaG9vJTJmc2VhcmNoJTJmZGV0YWlscy5odG1sL1JLPTAvUlM9Z1hlZU1kVGVCV0hSbDBnRTZUSmlIeHNVX3NVLSI+UHJpdmFjeTwvYT48L2xpPjxsaT48YSBocmVmPSJodHRwOi8vcmkuc2VhcmNoLnlhaG9vLmNvbS9feWx0PUF3ckJFaUlVRXVwVFNna0FSOVBVd09aXy9SVj0yL1JFPTE0MDc4Nzc3ODEvUk89MTAvUlU9aHR0cCUzYSUyZiUyZmluZm8ueWFob28uY29tJTJmbGVnYWwlMmZ1cyUyZnlhaG9vJTJmdXRvcyUyZnV0b3MtMTczLmh0bWwvUks9MC9SUz1JajFjNml5WXU1eFZGVzlsVjFKSmZuaF9tLjQtIj5UZXJtczwvYT48L2xpPjxsaT48YSBocmVmPSJodHRwOi8vcmkuc2VhcmNoLnlhaG9vLmNvbS9feWx0PUF3ckJFaUlVRXVwVFNna0FTTlBVd09aXy9SVj0yL1JFPTE0MDc4Nzc3ODEvUk89MTAvUlU9aHR0cCUzYSUyZiUyZmFkdmVydGlzaW5nLnlhaG9vLmNvbSUyZmFydGljbGUlMmZzZWFyY2gtYWR2ZXJ0aXNpbmcuaHRtbC9SSz0wL1JTPXpqV09ySHdrUzloTnhhejJzbDVVaDdOVklqVS0iPkFkdmVydGlzZTwvYT48L2xpPjwvdWw+PC9kaXY+PC9kaXY+PC9kaXY+PC9kaXY+PCEtLSBTcGFjZUlEPTIxNDU4MjkwNzYgbG9jPUZPT1Q5IG5vYWQgLS0+PCEtLSBmYWMtZ2QyLW5vYWQgLS0+PCEtLSBnZDItc3RhdHVzLTIgLS0+PCEtLVFZWiBDTVNfTk9ORV9BVkFJTCwsOTguMTM5LjIyNy4xMjQ7O0ZPT1Q5OzIxNDU4MjkwNzY7MjstLT48c2NyaXB0PllVSV9jb25maWc9eyJzcGFjZWlkIjoiMjE0NTgyOTA3NiIsInB2aWQiOiJxZ3pFQ2prNExqR1l3V1F4VTRSMjJBZDdPVGd1TVZQcUVoVF93dW80IiwiYmVhY29uIjoiaHR0cDpcL1wvZ2FtZXMuc2VhcmNoLnlhaG9vLmNvbVwvYmVhY29uXC9wLmdpZiIsInRlc3RpZCI6IiIsImZldGNoQ1NTIjp0cnVlfTsoZnVuY3Rpb24oKXt2YXIgZT13aW5kb3cubG9jYXRpb24sZCxiO2Z1bmN0aW9uIGMoZil7cmV0dXJuIGRlY29kZVVSSUNvbXBvbmVudChmLnJlcGxhY2UoL1wrL2csIiAiKSl9ZnVuY3Rpb24gYShqKXt2YXIgaD1qLm1hdGNoKC8oW15cPyMmXSspPShbXiMmXSopL2cpfHxbXSxsPXt9LGcsZixrO2ZvcihnPTAsZj1oLmxlbmd0aDtnPGY7KytnKXtrPWhbZ10uc3BsaXQoIj0iKTtsW2Moa1swXSldPWMoa1sxXSl9cmV0dXJuIGx9aWYod2luZG93Lm5hdmlnYXRvciYmd2luZG93Lm5hdmlnYXRvci51c2VyQWdlbnQubWF0Y2goL0dlY2tvXC8vKSl7ZD0vIy4qJC8uZXhlYyhlLmhyZWYpO2Q9ZCYmZFswXT9kWzBdOiIifWVsc2V7ZD1lLmhhc2h9Yj1hKGQpO2lmKGIuc2Qpe2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJ5c2Noc3AiKS52YWx1ZT1iLnNkfWVsc2V7aWYoYi5fc2Qpe2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJ5c2Noc3AiKS52YWx1ZT0iIn19fSkoKTsoZnVuY3Rpb24oKXtZVUk9e0Vudjp7bW9kczp7fSxhZGQ6ZnVuY3Rpb24obixtLGwsZCl7aWYobiYmbi5hZGRFdmVudExpc3RlbmVyKXtuLmFkZEV2ZW50TGlzdGVuZXIobSxsLGQpfWVsc2V7aWYobiYmbi5hdHRhY2hFdmVudCl7bi5hdHRhY2hFdmVudCgib24iK20sbCl9fX0scmVtb3ZlOmZ1bmN0aW9uKG8sbixtLGQpe2lmKG8mJm8ucmVtb3ZlRXZlbnRMaXN0ZW5lcil7dHJ5e28ucmVtb3ZlRXZlbnRMaXN0ZW5lcihuLG0sZCl9Y2F0Y2gobCl7fX1lbHNle2lmKG8mJm8uZGV0YWNoRXZlbnQpe28uZGV0YWNoRXZlbnQoIm9uIituLG0pfX19fSxhZGQ6ZnVuY3Rpb24obCxuLGQsbSl7WVVJLkVudi5tb2RzW2xdPXtuYW1lOmwsZm46bix2ZXJzaW9uOmQsZGV0YWlsczptfHx7fX19fTtZPXtfcGVuZGluZzpbXSx1c2U6ZnVuY3Rpb24oKXtZLl9wZW5kaW5nLnB1c2goYXJndW1lbnRzKX0sU2VhcmNoOnt9fTt2YXIgaT13aW5kb3csZz1kb2N1bWVudCxrPVlVSS5FbnYuYWRkLGY9WVVJLkVudi5yZW1vdmUsYj0oZnVuY3Rpb24oKXt2YXIgZD1bXTtmdW5jdGlvbiBsKCl7c2V0VGltZW91dChmdW5jdGlvbigpe3ZhciBuPTAsbT1kLmxlbmd0aDtmb3IoO248bTtuKyspe2Rbbl0oKX1mKGksImxvYWQiLGwpfSwwKX1rKGksImxvYWQiLGwpO3JldHVybnthZGQ6ZnVuY3Rpb24obSl7ZC5wdXNoKG0pfX19KCkpLGE9KGZ1bmN0aW9uKCl7dmFyIGQ9bmF2aWdhdG9yLnVzZXJBZ2VudC5tYXRjaCgvTVNJRVxzKFteO10qKS8pO2lmKGQpe3JldHVybiBwYXJzZUZsb2F0KGRbMV0pfXJldHVybiAwfSgpKTtmdW5jdGlvbiBjKGQpe3JldHVybiBkLnJlcGxhY2UoL15ccyt8XHMrJC9nLCIiKX1mdW5jdGlvbiBlKG0sZCl7dmFyIGw9bmV3IFJlZ0V4cCgiKFxcc3xeKSIrZCsiKFxcc3wkKSIpO3JldHVybiBtLmNsYXNzTmFtZS5tYXRjaChsKX1mdW5jdGlvbiBqKG0sZCl7dmFyIGw9bmV3IFJlZ0V4cCgiKFxcc3xeKSIrZCsiKFxcc3wkKSIpO20uY2xhc3NOYW1lPWMobS5jbGFzc05hbWUucmVwbGFjZShsLCIgIikpfWZ1bmN0aW9uIGgobCl7dmFyIGQ9Zy5nZXRFbGVtZW50QnlJZChsKTtpZihkKXtkLnJlc2V0KCl9fVkuU2VhcmNoLkxvYWRlcj0oZnVuY3Rpb24oKXt2YXIgbD1bXSxtPWZhbHNlO2Z1bmN0aW9uIG8ocSxwKXt2YXIgcz1nLmNyZWF0ZUVsZW1lbnQocSkscix0O2ZvcihyIGluIHApe2lmKHAuaGFzT3duUHJvcGVydHkocikpe3Q9cFtyXTtzLnNldEF0dHJpYnV0ZShyLHQpfX1yZXR1cm4gc31mdW5jdGlvbiBkKCl7dmFyIHI9MCxwPWwubGVuZ3RoLHMsdCxxPWcuZ2V0RWxlbWVudHNCeVRhZ05hbWUoImhlYWQiKVswXTtmb3IoO3I8cDtyKyspe3M9bFtyXTtpZihzLnR5cGU9PT0iY3NzIil7dD1vKCJsaW5rIix7aHJlZjpzLnVybCxyZWw6InN0eWxlc2hlZXQiLHR5cGU6InRleHQvY3NzIn0pfWVsc2V7aWYocy50eXBlPT09ImpzIil7dD1vKCJzY3JpcHQiLHtzcmM6cy51cmx9KX1lbHNle2NvbnRpbnVlfX1xLmFwcGVuZENoaWxkKHQpfW09dHJ1ZTtsPVtdfWZ1bmN0aW9uIG4oKXt2YXIgcj1hcmd1bWVudHNbMF0scz1BcnJheS5wcm90b3R5cGUuc2xpY2UuY2FsbChhcmd1bWVudHMsMSkscT0wLHA9cy5sZW5ndGg7Zm9yKDtxPHA7cSsrKXtsLnB1c2goe3R5cGU6cix1cmw6c1txXX0pfWlmKG0pe2QoKX19Yi5hZGQoZCk7cmV0dXJue2pzOmZ1bmN0aW9uKCl7dmFyIHA9QXJyYXkucHJvdG90eXBlLnNsaWNlLmNhbGwoYXJndW1lbnRzKTtuLmFwcGx5KG51bGwsWyJqcyJdLmNvbmNhdChwKSl9LGNzczpmdW5jdGlvbigpe3ZhciBwPUFycmF5LnByb3RvdHlwZS5zbGljZS5jYWxsKGFyZ3VtZW50cyk7bi5hcHBseShudWxsLFsiY3NzIl0uY29uY2F0KHApKX19fSgpKTsoZnVuY3Rpb24oKXt2YXIgbz0wO2Z1bmN0aW9uIG4oKXtpZigtLW89PT0wJiZ0eXBlb2YgcnRfQWRkVGltZT09PSJmdW5jdGlvbiIpe3J0X0FkZFRpbWUoInQyIil9aWYobz09PTAmJnR5cGVvZiBUIT09InVuZGVmaW5lZCIpe1Quc3RhbXAoImltZyIpfX1mdW5jdGlvbiBsKCl7dmFyIHE9dGhpcyxwPXEucGFyZW50Tm9kZS5wYXJlbnROb2RlLHksdCxyLHosdix1LHM7bigpO2lmKHEuZ2V0QXR0cmlidXRlKCJhbGxvd1Jlc2l6ZSIpPT09InRydWUifHxlKHEsInNtLXRodW1iIikpe2oocCwic20taGlkZSIpO2lmKGEmJmUocCwic20tbWVkaWEiKSl7eT1wLm9mZnNldFdpZHRoO3Q9cC5vZmZzZXRIZWlnaHQ7cj1xLndpZHRoO3o9cS5oZWlnaHQ7dj1NYXRoLm1heChyL3ksei90KTtpZih2JiZyJiZ6KXtxLnN0eWxlLndpZHRoPShyL3YpKyJweCI7cS5zdHlsZS5oZWlnaHQ9KHovdikrInB4In19fWlmKGUocSwiaGFzLWRlZmF1bHQiKSl7dT1xLnBhcmVudE5vZGUuY2hpbGROb2Rlcztmb3IodmFyIHM9MDtzPHUubGVuZ3RoO3MrKyl7aWYoZSh1W3NdLCJkZWZhdWx0LXRodW1iIikpe3Vbc10uc3R5bGUuZGlzcGxheT0ibm9uZSI7YnJlYWt9fXEuc3R5bGUuZGlzcGxheT0iYmxvY2sifX1mdW5jdGlvbiBtKCl7dmFyIHA9dGhpcy5wYXJlbnROb2RlLnBhcmVudE5vZGUscTtuKCk7dGhpcy5zdHlsZS5kaXNwbGF5PSJub25lIjtpZihlKHAsImltYWdlZGQtaXRlbSIpKXtxPXAucGFyZW50Tm9kZTtxLnJlbW92ZUNoaWxkKHApfWVsc2V7aWYoZShwLCJ1Z2MtdGh1bWIiKSl7dmFyIHI9cC5wYXJlbnROb2RlO2lmKHImJnIucGFyZW50Tm9kZSYmZShyLnBhcmVudE5vZGUsInRodW1iIikpe3IucGFyZW50Tm9kZS5jbGFzc05hbWU9InJlcyI7ci5yZW1vdmVDaGlsZChwKX19fX1mdW5jdGlvbiBkKCl7dmFyIHA9Zy5pbWFnZXMscSxyLHM7Zm9yKHE9MDtxPHAubGVuZ3RoO3ErKyl7cj1wW3FdO3M9ci5nZXRBdHRyaWJ1dGUoImRhdGEtc3JjIil8fHIuZ2V0QXR0cmlidXRlKCJfX3NyYyIpfHxyLmdldEF0dHJpYnV0ZSgiX3NyYyIpO2lmKHMpe28rKztyLm9ubG9hZD1sO3Iub25lcnJvcj1tO3Iuc2V0QXR0cmlidXRlKCJzcmMiLHMpO3IucmVtb3ZlQXR0cmlidXRlKCJkYXRhLXNyYyIpO3IucmVtb3ZlQXR0cmlidXRlKCJfX3NyYyIpO3IucmVtb3ZlQXR0cmlidXRlKCJfc3JjIik7aihyLCJoaWRkZW4iKX19fWIuYWRkKGQpfSgpKTtiLmFkZChmdW5jdGlvbigpe3ZhciBsPWcuZ2V0RWxlbWVudEJ5SWQoInlzY2hzcCIpLGQ9LyhefFxzKXNkKFxzfCQpLztpZihsJiZkLnRlc3QobC5wYXJlbnROb2RlLmNsYXNzTmFtZSkpe3JldHVybn1pZihhJiYoIWx8fCFsLmdldEF0dHJpYnV0ZSgiZGlydHkiKSkpe2goInNmIik7aCgic0IiKX19KTsoZnVuY3Rpb24oKXt2YXIgbD1nLmdldEVsZW1lbnRCeUlkKCJ3ZWIiKSxtPShsKT9sLmdldEVsZW1lbnRzQnlUYWdOYW1lKCJhIik6W10scD0vKD86XnxccyspeXNjaHR0bCg/OlxzK3wkKS8sbj1tLmxlbmd0aCxxLGQ9KGZ1bmN0aW9uKCl7aWYoYSYmYTw3KXtyZXR1cm4gZnVuY3Rpb24odix0KXt2YXIgdT1uZXcgUmVnRXhwKCJePGEuKlxccyIrdCsnPSIoW14iXSopIicsImkiKSxzPXUuZXhlYyh2Lm91dGVySFRNTCk7cmV0dXJuIHM/c1sxXTpudWxsfX1lbHNle3JldHVybiBmdW5jdGlvbih0LHMpe3JldHVybiB0LmdldEF0dHJpYnV0ZShzKX19fSgpKTtmdW5jdGlvbiByKHMpe3ZhciB3PXN8fGkuZXZlbnQsdT13LnRhcmdldHx8dy5zcmNFbGVtZW50LHY7d2hpbGUodSl7aWYodS50YWdOYW1lJiZ1LnRhZ05hbWUudG9Mb3dlckNhc2UoKT09PSJhIiYmdS5nZXRBdHRyaWJ1dGUoImRpcnR5aHJlZiIpKXt2PWQodSwiZGlydHlocmVmIik7aWYodil7dS5zZXRBdHRyaWJ1dGUoImhyZWYiLHYpfWJyZWFrfXU9dS5wYXJlbnROb2RlfX1rKGcsIm1vdXNlZG93biIscik7ayhnLCJjbGljayIscik7ZnVuY3Rpb24gbyh3KXt2YXIgdCx4LHMsdix1O3Q9ZCh3LCJocmVmIik7aWYoIXQpe3JldHVybn14PWQodywib3VybCIpO2lmKCF4KXtzPXQuaW5kZXhPZigiLyoqIik7aWYoczwwKXtyZXR1cm59eD1kZWNvZGVVUklDb21wb25lbnQodC5zdWJzdHIocyszKSl9dj13LmNsb25lTm9kZSh0cnVlKTt2LnNldEF0dHJpYnV0ZSgiaHJlZiIseCk7di5zZXRBdHRyaWJ1dGUoImRpcnR5aHJlZiIsdCk7aWYoYSl7dT12LmlubmVySFRNTDt0PWQodiwiZGlydHlocmVmIik7di5zZXRBdHRyaWJ1dGUoImhyZWYiLHQpO2lmKHYuaW5uZXJIVE1MIT09dSl7cmV0dXJufXYuc2V0QXR0cmlidXRlKCJocmVmIix4KX13LnBhcmVudE5vZGUucmVwbGFjZUNoaWxkKHYsdyl9d2hpbGUobi0tKXtxPW1bbl07aWYocC50ZXN0KHEuY2xhc3NOYW1lKSl7byhxKX19fSgpKX0oKSk7WVVJLmFkZCgiaW5pdC16cnAiLCBmdW5jdGlvbihZKSB7WS5uYW1lc3BhY2UoIlZlcnRpY2FsLlpycCIpO1kuVmVydGljYWwuWnJwLmluaXQgPSBmdW5jdGlvbigpIHtyZXR1cm4ge2lzWnJwOiB0cnVlfSB9fSk7WVVJLmFkZCgidmVydGljYWwtenJwIixmdW5jdGlvbihhKXthLm5hbWVzcGFjZSgiVmVydGljYWwuWnJwIik7YS5WZXJ0aWNhbC5acnAucG9zdFByb2Nlc3Npbmc9ZnVuY3Rpb24oZCl7dmFyIGI9ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoInNieC1ib3QiKSxjPWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJyZXN1bHRzIik7aWYoYil7Yi5zdHlsZS52aXNpYmlsaXR5PWQuaXNacnA/ImhpZGRlbiI6InZpc2libGUifX19LCIzLjMuMCIse3JlcXVpcmVzOlsiaW5pdC16cnAiXX0pO1kudXNlKCJ2ZXJ0aWNhbC16cnAiLGZ1bmN0aW9uKGIpe2lmKGIuVmVydGljYWwuWnJwLmluaXQpe3ZhciBhPWIuVmVydGljYWwuWnJwLmluaXQoKTtpZihhKXtiLlZlcnRpY2FsLlpycC5wb3N0UHJvY2Vzc2luZyhhKX19fSk7WS51c2UoInNycCIsZnVuY3Rpb24oKXtZLlNlYXJjaC5TUlAuaW5pdCh7ImVuYWJsZV9zaWRlYmFyX2NvbGxhcHNlIjoiIiwicHZpZCI6InFnekVDams0TGpHWXdXUXhVNFIyMkFkN09UZ3VNVlBxRWhUX3d1bzQiLCJ1cmxfaW1nX3Byb2dyZXNzIjoiaHR0cDpcL1wvbC55aW1nLmNvbVwvcHZcL2lcL3VzXC9zY2hcL2dyNFwvc3AtcHJvZ3Jlc3MyLmdpZiIsInR0cyI6bnVsbH0seyJhcmlhX2xvYWRpbmdfcmVzdWx0cyI6IlJldHJpZXZpbmcgc2VhcmNoIHJlc3VsdHMuIFBsZWFzZSB3YWl0LiIsImFyaWFfcmVzdWx0c19sb2FkZWQiOiJOZXcgc2VhcmNoIHJlc3VsdHMgaGF2ZSBiZWVuIHJldHJpZXZlZC4gUHJlc3MgY29udHJvbCBzaGlmdCBhbmQgZG93biBhcnJvdyBrZXkgdG8ganVtcCB0byB0aGUgZmlyc3Qgc2VhcmNoIHJlc3VsdC4gUHJlc3MgY29udHJvbCBzaGlmdCBhbmQgdXAgYXJyb3cga2V5IHRvIGp1bXAgYmFjayB0byB0aGUgc2VhcmNoIGJveC4iLCJjb21tb24uZXhwYW5kby5wbGF5dmlkZW8iOiJQbGF5IFZpZGVvIiwiY29tbW9uLmV4cGFuZG8uY2xvc2V2aWRlbyI6IkNsb3NlIFZpZGVvIiwiY29tbW9uLnJlc3VsdHMuZXJyb3IiOiJTb3JyeSwgdGhlcmUgd2FzIGEgcHJvYmxlbSByZXRyaWV2aW5nIHNlYXJjaCByZXN1bHRzLiBQbGVhc2UgdHJ5IGFnYWluLiIsImNvbW1vbi5yZXN1bHRzLmxvYWRpbmciOiJMb2FkaW5nIHJlc3VsdHMuLi4iLCJzcnAudGl0bGUiOiIlcSAtIFlhaG9vIEdhbWVzIFNlYXJjaCBSZXN1bHRzIiwiY29tbW9uLm1vcmUiOiJNb3JlIiwiY29tbW9uLmxlc3MiOiJMZXNzIn0pO30pO1kudXNlKCJzZWFyY2gtYXNzaXN0LWNsaWVudCIsIGZ1bmN0aW9uKCkge25ldyBZLlNFQVJDSEFTU0lTVC5DTElFTlQoeyJwcm9wZXJ0eSI6ImdhbWVzIiwic2VhcmNoQm94IjoiI3lzY2hzcCIsImhvc3ROb2RlVG9BdHRhY2giOiIjc2JxLXdyYXAiLCJtYXhTdWdnZXN0cyI6MTAsImFueUtleVNlYXJjaCI6dHJ1ZSwiYmFja3NwYWNlQmVoYXZpb3JOYXRpdmUiOnRydWUsImVuYWJsZVRyZW5kaW5nIjpmYWxzZSwiYXV0b0FsaWduIjpmYWxzZSwiY2FuY2VsQnV0dG9uIjp0cnVlLCJ0Y3BQcmVDb25uZWN0IjpmYWxzZSwicXVpZXRNb2RlIjpmYWxzZSwiYXJpYVBsdWciOnRydWUsInN0cmVhbSI6ZmFsc2UsInJldmVyc2VIaWdobGlnaHQiOnRydWUsImxhbmciOiJlbi1VUyIsImRldmljZSI6eyJ0YWJsZXQiOnsic2tpbiI6ImRlc2t0b3AifX0sInVsdCI6eyJzcGFjZUlkIjoiMjE0NTgyOTA3NiIsImNzcmNwdmlkIjoicWd6RUNqazRMakdZd1dReFU0UjIyQWQ3T1RndU1WUHFFaFRfd3VvNCIsInZ0ZXN0aWQiOiIifSwiZXh0cmFVbHRQYXJhbXMiOnsiZnIiOiJzZnB1eHRtbi8qIiwibl9yc2x0IjowfSwieWx0Q3VzdG9tIjoiX3lsdD1Bd3JCRWlJVUV1cFRTZ2tBQk5QVXdPWl8ifSk7fSk7WS51c2UoJ2xvYWRlcicsJ3NycCcsZnVuY3Rpb24oKXtZLmNvbmZpZz1ZLm1peChZLmNvbmZpZyx7Ym9vdHN0cmFwOnRydWUsY29tYmluZTp0cnVlLGNvbWJvQmFzZTonaHR0cDovL2wueWltZy5jb20venovY29tYm8/JyxpZ25vcmU6Wydza2luLXNhbS10YWJ2aWV3JywnZ2FsbGVyeS1qc29ucCddLHJvb3Q6J3l1aTozLjEwLjAvYnVpbGQvJyxncm91cHM6e2E6e2NvbWJpbmU6dHJ1ZSxjb21ib0Jhc2U6J2h0dHA6Ly9sLnlpbWcuY29tL3p6L2NvbWJvPycsZXh0OmZhbHNlLHJvb3Q6J3B2LycsbW9kdWxlczp7InNycC11bml2ZXJzYWwtaGVhZGVyLTMiOnsicGF0aCI6ImxpYlwvczhcL3ZlcnRpY2FsXC9zcnAtdW5pdmVyc2FsLWhlYWRlci0zXzIwMTMwNTA1MDczOC5qcyIsInJlcXVpcmVzIjpbXX19fX19LHRydWUsbnVsbCwwLHRydWUpO1kuU2VhcmNoLnVzZSgnc3JwLXVuaXZlcnNhbC1oZWFkZXItMycsJ25vZGUtZm9jdXNtYW5hZ2VyJywnYmFzZScsJ2lvJywnanNvbicsJ2FzeW5jLXF1ZXVlJywnY29va2llJywnZXZlbnQtY3VzdG9tJywnanNvbnAnLCdqc29ucC11cmwnLCdldmVudCcsJ3N1YnN0aXR1dGUnLCdldmVudC1yZXNpemUnLCdldmVudC1ob3ZlcicsJ2V2ZW50LW1vdXNlZW50ZXInLCdldmVudC1kZWxlZ2F0ZScsJ3F1ZXJ5c3RyaW5nLXN0cmluZ2lmeScsJ29vcCcsJ2NsYXNzbmFtZW1hbmFnZXInLCdsYW5nL2RhdGF0eXBlLWRhdGUnLCdpbnRsJyxmdW5jdGlvbigpeyhmdW5jdGlvbigpe1kuU2VhcmNoLlVuaXZlcnNhbEhlYWRlci5pbml0KHsianMiOiJodHRwOlwvXC9sLnlpbWcuY29tXC96elwvY29tYm8/a3hcL3l1Y3NcL3VoM1wvdWhcLzEwNjdcL2pzXC91aC1taW4uanNcdTAwMjZreFwveXVjc1wvdWgzXC91aFwvanNcLzEwMlwvZ2FsbGVyeS1qc29ucC1taW4uanNcdTAwMjZreFwveXVjc1wvdWgzXC91aFwvanNcLzEwMjFcL21lbnVfdXRpbHNfdjMtbWluLmpzXHUwMDI2a3hcL3l1Y3NcL3VoM1wvdWhcL2pzXC84MzRcL2xvY2FsZURhdGVGb3JtYXQtbWluLmpzXHUwMDI2a3hcL3l1Y3NcL3VoM1wvdWhcL2pzXC84NzJcL3RpbWVzdGFtcF9saWJyYXJ5X3YyLW1pbi5qc1x1MDAyNmt4XC95dWNzXC91aDNcL3VoXC9qc1wvODI5XC9sb2dvX2RlYnVnLW1pbi5qc1x1MDAyNmt4XC95dWNzXC91aF8zXzBfMlwvc3dpdGNoX3RoZW1lXC80XC9qc1wvc3dpdGNoX3RoZW1lLW1pbi5qc1x1MDAyNmt4XC95dWNzXC91aGNcL21ldGFcLzE2XC9qc1wvbWV0YS1taW4uanNcdTAwMjZreFwveXVjc1wvdWhfY29tbW9uXC9iZWFjb25cLzE4XC9qc1wvYmVhY29uLW1pbi5qc1x1MDAyNmt4XC91Y3NcL2NvbWV0XC9qc1wvNzdcL2NvbWV0ZC15dWkzLW1pbi5qc1x1MDAyNmt4XC91Y3NcL2NvbWV0XC9qc1wvNzdcL2Nvbm4tbWluLmpzXHUwMDI2a3hcL3Vjc1wvY29tZXRcL2pzXC83N1wvZGFyay10ZXN0LW1pbi5qc1x1MDAyNmt4XC95dWNzXC91aDNcL2Rpc2NsYWltZXJcLzE5MVwvanNcL2Rpc2NsYWltZXJfc2VlZC1taW4uanNcdTAwMjZreFwveXVjc1wvdWgzXC91aDNfdG9wX2JhclwvanNcLzI3NFwvdG9wX2Jhcl92My1taW4uanNcdTAwMjZreFwveXVjc1wvdWgzXC9wcm9maWxlXC9qc1wvNjJcL3Byb2ZpbGUtbWluLmpzXHUwMDI2a3hcL3l1Y3NcL3VoM1wvcHJvZmlsZVwvanNcLzgyXC91c2VybWVudV92My1taW4uanNcdTAwMjZreFwvdWNzXC9jb21tb25cL2pzXC8xMzVcL2pzb25wLXN1cGVyLWNhY2hlZC1taW4uanNcdTAwMjZreFwveXVjc1wvdWgzXC9hdmF0YXJcL2pzXC8yNVwvYXZhdGFyLW1pbi5qc1x1MDAyNmt4XC95dWNzXC91aDNcL21haWxfbGlua1wvanNcLzg5XC9tYWlsY291bnRfc3NsLW1pbi5qc1x1MDAyNmt4XC95dWNzXC91aDNcL2hlbHBcL2pzXC81NVwvaGVscF9tZW51X3YzLW1pbi5qc1x1MDAyNmt4XC91Y3NcL2NvbW1vblwvanNcLzEzMVwvanNvbnAtY2FjaGVkLW1pbi5qc1x1MDAyNmt4XC95dWNzXC91aDNcL2JyZWFraW5nbmV3c1wvanNcLzExXC9icmVha2luZ19uZXdzLW1pbi5qcyIsInNwcml0ZSI6Imh0dHA6XC9cL2wueWltZy5jb21cL2t4XC95dWNzXC91aDNcL3VoXC9pbWFnZXNcLzM4N1wvdWhfc3ByaXRlLnBuZyIsIm9wdGlvbnMiOltbeyJtZW51VGV4dCI6IlByZWZlcmVuY2VzIiwiYWN0aW9uVHlwZSI6ImxpbmsiLCJ1cmwiOiJodHRwOlwvXC9zZWFyY2gueWFob28uY29tXC9wcmVmZXJlbmNlc1wvcHJlZmVyZW5jZXM/cHJlZl9kb25lPWh0dHAlM0ElMkYlMkZnYW1lcy5zZWFyY2gueWFob28uY29tJTJGc2VhcmNoJTNGZWklM0RVVEYtOCUyNnAlM0RhbGVydCUyNTI4MTQyJTI1MjklMjUzQiUyNTI4JTI2ZnIlM0RzZnBhbGVydCUyNTI4MTQyJTI1MjklMjUzQiUyNTI4XHUwMDI2LmJjcnVtYj1DNHJsSndxRW9lR1x1MDAyNmZyPXNmcGFsZXJ0JTI4MTQyJTI5JTNCJTI4IiwidGFyZ2V0IjoiX3RvcCJ9XSxbeyJtZW51VGV4dCI6IkFkdmVydGlzaW5nIFByb2dyYW1zIiwiYWN0aW9uVHlwZSI6ImxpbmsiLCJ1cmwiOiJodHRwOlwvXC9hZHZlcnRpc2luZy55YWhvby5jb21cLyIsInRhcmdldCI6Il90b3AifSx7Im1lbnVUZXh0IjoiQWJvdXQgVGhpcyBQYWdlIiwiYWN0aW9uVHlwZSI6ImxpbmsiLCJ1cmwiOiJodHRwOlwvXC9oZWxwLnlhaG9vLmNvbVwvbFwvdXNcL3lhaG9vXC9zZWFyY2hcL2Jhc2ljc1wvYmFzaWNzLTIzLmh0bWwiLCJ0YXJnZXQiOiJfdG9wIn1dXX0pO30oKSk7fSk7fSk7WS5TZWFyY2guTG9hZGVyLmpzKCdodHRwOi8vbC55aW1nLmNvbS9wdi9saWIvczgvdmVydGljYWwvdXNfc3JwX3B1cnBsZV9nYW1lc18xXzIwMTQwNDI5MjAzMy5qcycsJ2h0dHA6Ly9sLnlpbWcuY29tL3B2L2xpYi9zOC92ZXJ0aWNhbC91c19zcnBfcHVycGxlX2dhbWVzXzJfMjAxNDA3MDkyMDM1LmpzJywnaHR0cDovL2wueWltZy5jb20vcHYvbGliL3M4L3ZlcnRpY2FsL3NycF9idWNrZXRiYXJfeXVpM18yMDEyMDIyMDAzMjcuanMnKTs8L3NjcmlwdD48L2JvZHk+PC9odG1sPjxzY3JpcHQ+KGZ1bmN0aW9uKGMpe3ZhciBlPSJodHRwczovLyIsYT1jJiZjLkpTT04sZj0ieXBjZGIiLGc9ZG9jdW1lbnQsZD1bInlhaG9vLmNvbSIsImZsaWNrci5jb20iLCJyaXZhbHMuY29tIiwieWFob28ubmV0IiwieWltZy5jb20iXSxiO2Z1bmN0aW9uIGkobCxvLG4sbSl7dmFyIGsscDt0cnl7az1uZXcgRGF0ZSgpO2suc2V0VGltZShrLmdldFRpbWUoKSttKjEwMDApO2cuY29va2llPVtsLCI9IixlbmNvZGVVUklDb21wb25lbnQobyksIjsgZG9tYWluPSIsbiwiOyBwYXRoPS87IG1heC1hZ2U9IixtLCI7IGV4cGlyZXM9IixrLnRvVVRDU3RyaW5nKCldLmpvaW4oIiIpfWNhdGNoKHApe319ZnVuY3Rpb24gaChsKXt2YXIgayxtO3RyeXtrPW5ldyBJbWFnZSgpO2sub25lcnJvcj1rLm9ubG9hZD1mdW5jdGlvbigpe2sub25lcnJvcj1rLm9ubG9hZD1udWxsO2s9bnVsbH07ay5zcmM9bH1jYXRjaChtKXt9fWZ1bmN0aW9uIGoodSxBLG4seSl7dmFyIHc9MCx2LHoseCxzLHQscCxtLHIsbCxvLGsscTt0cnl7Yj1sb2NhdGlvbn1jYXRjaChyKXtiPW51bGx9dHJ5e2lmKGEpe2s9YS5wYXJzZSh5KX1lbHNle3E9bmV3IEZ1bmN0aW9uKCJyZXR1cm4gIit5KTtrPXEoKX19Y2F0Y2gocil7az1udWxsfXRyeXt2PWIuaG9zdG5hbWU7ej1iLnByb3RvY29sO2lmKHope3orPSIvLyJ9fWNhdGNoKHIpe3Y9ej0iIn1pZighdil7dHJ5e3g9Zy5VUkx8fGIuaHJlZnx8IiI7cz14Lm1hdGNoKC9eKChodHRwW3NdPylcOltcL10rKT8oW146XC9cc10rfFtcOlxkYWJjZGVmXC5dKykvaSk7aWYocyYmc1sxXSYmc1szXSl7ej1zWzFdfHwiIjt2PXNbM118fCIifX1jYXRjaChyKXt6PXY9IiJ9fWlmKCF2fHwha3x8IXp8fCFBKXtyZXR1cm59d2hpbGUobD1kW3crK10pe3Q9bC5yZXBsYWNlKC9cLi9nLCJcXC4iKTtwPW5ldyBSZWdFeHAoIihcXC4pKyIrdCsiJCIpO2lmKHY9PWx8fHYuc2VhcmNoKHApIT0tMSl7bz1sO2JyZWFrfX1pZighbyl7cmV0dXJufWlmKHo9PT1lKXtBPW59dz0wO3doaWxlKG09QVt3KytdKXtoKHorbStrW20uc3Vic3RyKDErbS5sYXN0SW5kZXhPZigiPSIpKV0pfWkoZix1LG8sODY0MDApfWooJzM3ZmVjMGY5OTNlN2NhYzg5N2EzNzRjMjZlZDY5ZWVlJyxbJ2FkLnlpZWxkbWFuYWdlci5jb20vY3N5bmM/dmVyPTIuMScsJ2NzeW5jLnlhaG9vYXBpcy5jb20vY3N5bmM/dmVyPTIuMScsJ3Uyc2IuaW50ZXJjbGljay5jb20vYmVhY29uLmdpZj92ZXI9Mi4xJ10sWydhZC55aWVsZG1hbmFnZXIuY29tL2NzeW5jP3Zlcj0yLjEnLCdjZG5rLmludGVyY2xpY2suY29tL2JlYWNvbi5naWY/dmVyPTIuMScsJ2NzeW5jLnlhaG9vYXBpcy5jb20vY3N5bmM/dmVyPTIuMSddLCd7IjIuMSI6IiZpZD0yMzM1MSZ2YWx1ZT05dXRvNDY1OWI4Z3piJTI2byUzZDQlMjZxJTNkcDFEaG1ZMWNMU0JLV1NZTHlFUEVxTjMwRTZMLSUyNmYlM2RlMyUyNnYlM2RJclFEVzdjV1ptS0ZPZ2tMeE5nViZvcHRvdXQ9aCUzZDElMjZiJTNkMCZ0aW1lb3V0PTE0MDc4NDg5ODEmc2lnPTEzcmdvZ3RhciJ9Jyl9KSh3aW5kb3cpOwo8L3NjcmlwdD4KPCEtLSBmZTA1LnZlcnRpY2FsLnNlYXJjaC5iZjEueWFob28uY29tIHVuY29tcHJlc3NlZC9jaHVua2VkIFR1ZSBBdWcgMTIgMTM6MDk6NDAgVVRDIDIwMTQgLS0+Cg=="
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "severity": "medium",
+        "summary": "Cross site scripting vulnerability",
+        "desc": "A Cross Site Scripting vulnerability was found at: \"http://192.168.1.33:8082/xss/reflect/post1\", using HTTP method POST. The sent post-data was: \"in=\" which modifies the \"in\" parameter. This vulnerability was found in the request with id 436.",
+        "urls": [{"url": "http://192.168.1.33:8082/xss/reflect/post1"}],
+        "httpTransactions": [
+            {
+                "id": 436,
+                "method": "POST",
+                "request": {
+                    "status": "POST http://192.168.1.33:8082/xss/reflect/post1 HTTP/1.1",
+                    "header": {
+                        "Accept": ["*/*"],
+                        "Accept-Encoding": ["gzip, deflate"],
+                        "Content-Length": ["79"],
+                        "Content-Type": ["application/x-www-form-urlencoded"],
+                        "Host": ["192.168.1.33:8082"],
+                        "Referer": ["http://192.168.1.33:8082/"],
+                        "User-Agent": ["Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; w3af.org)"]
+                    },
+                    "body": {
+                        "contentEncoding": "base64",
+                        "content": "YVc0OWFUTTRabllsTTBNbE1rWXRKVE5GYVRNNFpuWWxNa1lsTWtGcE16aG1kaVV5TW1rek9HWjJhVE00Wm5ZbE1qZHBNemhtZG1regpPR1oySlRZd2FUTTRablpwTXpobWRpVXlNQ1V6UkE9PQo="
+                    }
+                },
+                "response": {
+                    "status": "HTTP/1.1 200 OK",
+                    "header": {
+                        "Content-Length": ["367"],
+                        "Content-Type": ["text/html; charset=utf-8"],
+                        "Date": ["Wed, 25 Feb 2015 20:16:40 GMT"]
+                    },
+                    "body": {
+                        "contentEncoding": "text",
+                        "content": "Cgo8IURPQ1RZUEUgaHRtbD4KPGh0bWw+PGhlYWQ+PHRpdGxlPlJlZmxlY3RlZCBYU1MgaW4gUE9TVCBwcm9jZXNzaW5nIChwb3N0LjEpPC90aXRsZT4KCjwvaGVhZD48Ym9keT4KCgo8SDI+UG9zdCBGdWxsIEphdmFzY3JpcHQgaW5qZWN0aW9uIHRlc3Q8L0gyPgo8cD4KPEZPUk0gbWV0aG9kPSJQT1NUIiBhY3Rpb249InBvc3QxIj4KPElOUFVUIHR5cGU9InRleHQiIGlkPSJpbiIgbmFtZT0iaW4iIHNpemU9IjQwIiB2YWx1ZT0iaTM4ZnY8Ly0+aTM4ZnYvKmkzOGZ2ImkzOGZ2aTM4ZnYnaTM4ZnZpMzhmdmBpMzhmdmkzOGZ2ID0iPgo8SU5QVVQgdHlwZT0iU3VibWl0IiB2YWx1ZT0iU2VhcmNoISI+CjwvRk9STT4KCgo8L2JvZHk+PC9odG1sPgoKCg=="
+                    }
+                }
+            }
+        ]
+    }
+]

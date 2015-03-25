@@ -1,15 +1,16 @@
 package w3af
 
 import (
-	"code.google.com/p/go.net/context"
-	"github.com/facebookgo/stackerr"
-
+	"encoding/json"
 	"fmt"
+	"net/http"
+	"path/filepath"
+
+	"code.google.com/p/go.net/context"
 	"github.com/bearded-web/bearded/models/plan"
 	"github.com/bearded-web/bearded/models/report"
 	"github.com/bearded-web/bearded/pkg/script"
-	"net/http"
-	"path/filepath"
+	"github.com/facebookgo/stackerr"
 )
 
 const (
@@ -18,6 +19,11 @@ const (
 	homeDir       = "/home/app"
 	xmlReportName = "report.xml"
 )
+
+type w3afData struct {
+	Type string `json:"type"`
+	Data string `json:"data"`
+}
 
 type W3af struct {
 }
@@ -34,27 +40,39 @@ func (s *W3af) Handle(ctx context.Context, client script.ClientV1, conf *plan.Co
 		return err
 	}
 	xmlOutputPath := filepath.Join(homeDir, xmlReportName)
-	profile := Profile{
-		Target:        conf.Target,
-		XmlOutputPath: xmlOutputPath,
-	}
-	println("run w3af")
-	// Run w3af util
-	rep, err := pl.Run(ctx, pl.LatestVersion(), &plan.Conf{
-		CommandArgs: "-P /share/profile.pw3af",
-		SharedFiles: []*plan.SharedFile{
-			&plan.SharedFile{
-				Path: "profile.pw3af",
-				Text: profile.GenIni(),
-			},
-		},
+	p := &plan.Conf{
 		TakeFiles: []*plan.File{
 			&plan.File{
 				Path: xmlOutputPath,
 				Name: xmlReportName,
 			},
 		},
-	})
+	}
+
+	w3afData := &w3afData{}
+	if conf.FormData != "" {
+		if err = json.Unmarshal([]byte(conf.FormData), w3afData); err != nil {
+			return stackerr.Wrap(err)
+		}
+	}
+	if w3afData.Type == "plan" {
+		profile := Profile{
+			Base:          w3afData.Data,
+			Target:        conf.Target,
+			XmlOutputPath: xmlOutputPath,
+		}
+		p.CommandArgs = "-P /share/profile.pw3af"
+		p.SharedFiles = []*plan.SharedFile{
+			&plan.SharedFile{
+				Path: "profile.pw3af",
+				Text: profile.GenIni(),
+			},
+		}
+
+	}
+	println("run w3af")
+	// Run w3af util
+	rep, err := pl.Run(ctx, pl.LatestVersion(), p)
 	if err != nil {
 		return stackerr.Wrap(err)
 	}

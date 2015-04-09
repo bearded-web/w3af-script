@@ -9,6 +9,7 @@ import (
 	"code.google.com/p/go.net/context"
 	"github.com/bearded-web/bearded/models/plan"
 	"github.com/bearded-web/bearded/models/report"
+	"github.com/bearded-web/bearded/models/issue"
 	"github.com/bearded-web/bearded/pkg/script"
 	"github.com/facebookgo/stackerr"
 )
@@ -132,11 +133,11 @@ func getXmlReport(ctx context.Context, client script.ClientV1, rep *report.Repor
 	return parseXml(reportXmlData)
 }
 
-func transformXmlReport(xmlRep *XmlReport) ([]*report.Issue, error) {
-	issues := []*report.Issue{}
+func transformXmlReport(xmlRep *XmlReport) ([]*issue.Issue, error) {
+	issues := []*issue.Issue{}
 	for _, xmlErr := range xmlRep.Errors {
-		issue := &report.Issue{
-			Severity: report.SeverityError,
+		issue := &issue.Issue{
+			Severity: issue.SeverityError,
 			Summary:  fmt.Sprintf("Error in w3af execution %s", xmlErr.Caller),
 			Desc:     xmlErr.Desc,
 		}
@@ -148,18 +149,24 @@ func transformXmlReport(xmlRep *XmlReport) ([]*report.Issue, error) {
 			continue
 		}
 
-		issue := &report.Issue{
+		issueObj := &issue.Issue{
 			Severity: severity,
 			Summary:  fmt.Sprintf("%s", vuln.Name),
 			Desc:     vuln.Description,
-			Urls: []*report.Url{
-				&report.Url{Url: vuln.Url},
+			Vector: &issue.Vector{
+				Url: vuln.Url,
 			},
 		}
+		if len(vuln.References) > 0 {
+			for _, vulnRef := range vuln.References {
+				ref := &issue.Reference{Url: vulnRef.Url, Title: vulnRef.Title}
+				issueObj.References = append(issueObj.References, ref)
+			}
+		}
 		if vuln.HttpTransactions != nil && len(vuln.HttpTransactions) > 0 {
-			transactions := []*report.HttpTransaction{}
+			transactions := []*issue.HttpTransaction{}
 			for _, trans := range vuln.HttpTransactions {
-				httpTran := &report.HttpTransaction{
+				httpTran := &issue.HttpTransaction{
 					Id:     trans.Id,
 					Method: vuln.Method,
 				}
@@ -171,21 +178,22 @@ func transformXmlReport(xmlRep *XmlReport) ([]*report.Issue, error) {
 				}
 				transactions = append(transactions, httpTran)
 			}
-			issue.HttpTransactions = transactions
+			issueObj.Vector.HttpTransactions = transactions
 		}
-		issues = append(issues, issue)
+		issues = append(issues, issueObj)
 	}
 	return issues, nil
 }
 
-func transformHttpEntity(ent *HttpEntity) *report.HttpEntity {
-	out := &report.HttpEntity{
+func transformHttpEntity(ent *HttpEntity) *issue.HttpEntity {
+	// TODO (m0sth8): extract url from status
+	out := &issue.HttpEntity{
 		Status: ent.Status,
 		Header: http.Header{},
 	}
 	if ent.Body != nil {
 		// TODO (m0sth8): how to handle binary content??
-		out.Body = &report.HttpBody{
+		out.Body = &issue.HttpBody{
 			ContentEncoding: ent.Body.ContentEncoding,
 			Content:         ent.Body.Content,
 		}

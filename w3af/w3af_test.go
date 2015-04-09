@@ -13,6 +13,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
+	"github.com/bearded-web/bearded/models/issue"
 )
 
 type ClientMock struct {
@@ -85,7 +86,7 @@ func TestW3afGetXmlReport(t *testing.T) {
 
 func TestW3afTransform(t *testing.T) {
 	reportXmlData := loadTestData("report.xml")
-	expectedIssues := []*report.Issue{}
+	expectedIssues := []*issue.Issue{}
 	err := json.Unmarshal(loadTestData("issues.json"), &expectedIssues)
 	require.NoError(t, err)
 	xmlReport, err := parseXml(reportXmlData)
@@ -93,13 +94,13 @@ func TestW3afTransform(t *testing.T) {
 	require.NotNil(t, xmlReport)
 
 	issues, err := transformXmlReport(xmlReport)
-	//		data, err := json.Marshal(issues)
-	//		println(string(data))
+	data, err := json.Marshal(issues)
+	println(string(data))
 	require.NoError(t, err)
 	require.Len(t, issues, 23) // 21 vuln + 2 errors
 
-	assert.Equal(t, report.SeverityError, issues[0].Severity)
-	assert.Equal(t, report.SeverityError, issues[1].Severity)
+	assert.Equal(t, issue.SeverityError, issues[0].Severity)
+	assert.Equal(t, issue.SeverityError, issues[1].Severity)
 
 	assert.Equal(t, expectedIssues, issues)
 

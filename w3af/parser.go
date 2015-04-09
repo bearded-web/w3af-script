@@ -4,6 +4,11 @@ import (
 	"encoding/xml"
 )
 
+type Reference struct {
+	Url   string `xml:"url,attr"`
+	Title string `xml:"title,attr"`
+}
+
 type HttpHeader struct {
 	Field   string `xml:"field,attr"`
 	Content string `xml:"content,attr"`
@@ -22,8 +27,8 @@ type HttpEntity struct {
 
 type HttpTransaction struct {
 	Id       int         `xml:"id,attr"`
-	Request  *HttpEntity `xml:"httprequest"`
-	Response *HttpEntity `xml:"httpresponse"`
+	Request  *HttpEntity `xml:"http-request"`
+	Response *HttpEntity `xml:"http-response"`
 }
 
 type Vulnerability struct {
@@ -35,7 +40,10 @@ type Vulnerability struct {
 	Url              string             `xml:"url,attr"`
 	Var              string             `xml:"var,attr"`
 	Description      string             `xml:"description"`
+	LongDescription  string             `xml:"long-description"`
+	FixGuidance      string             `xml:"fix-guidance"`
 	HttpTransactions []*HttpTransaction `xml:"http-transactions>http-transaction"`
+	References       []*Reference       `xml:"references>reference"`
 }
 
 type Error struct {
@@ -50,5 +58,6 @@ type XmlReport struct {
 
 func parseXml(data []byte) (*XmlReport, error) {
 	rep := &XmlReport{}
+
 	return rep, xml.Unmarshal(data, rep)
 }

@@ -17,43 +17,47 @@
 		},
 		{
 			"ImportPath": "github.com/bearded-web/bearded/models/file",
-			"Rev": "44687954a6336282dda2ae104d508fc36f2fc092"
+			"Rev": "bce4ce549eecd13afd0464db12a21ca41dd556dc"
+		},
+		{
+			"ImportPath": "github.com/bearded-web/bearded/models/issue",
+			"Rev": "bce4ce549eecd13afd0464db12a21ca41dd556dc"
 		},
 		{
 			"ImportPath": "github.com/bearded-web/bearded/models/plan",
-			"Rev": "44687954a6336282dda2ae104d508fc36f2fc092"
+			"Rev": "bce4ce549eecd13afd0464db12a21ca41dd556dc"
 		},
 		{
 			"ImportPath": "github.com/bearded-web/bearded/models/report",
-			"Rev": "44687954a6336282dda2ae104d508fc36f2fc092"
+			"Rev": "bce4ce549eecd13afd0464db12a21ca41dd556dc"
 		},
 		{
 			"ImportPath": "github.com/bearded-web/bearded/models/target",
-			"Rev": "44687954a6336282dda2ae104d508fc36f2fc092"
+			"Rev": "bce4ce549eecd13afd0464db12a21ca41dd556dc"
 		},
 		{
 			"ImportPath": "github.com/bearded-web/bearded/models/tech",
-			"Rev": "44687954a6336282dda2ae104d508fc36f2fc092"
+			"Rev": "bce4ce549eecd13afd0464db12a21ca41dd556dc"
 		},
 		{
 			"ImportPath": "github.com/bearded-web/bearded/pkg/agent/api",
-			"Rev": "44687954a6336282dda2ae104d508fc36f2fc092"
+			"Rev": "bce4ce549eecd13afd0464db12a21ca41dd556dc"
 		},
 		{
 			"ImportPath": "github.com/bearded-web/bearded/pkg/pagination",
-			"Rev": "44687954a6336282dda2ae104d508fc36f2fc092"
+			"Rev": "bce4ce549eecd13afd0464db12a21ca41dd556dc"
 		},
 		{
 			"ImportPath": "github.com/bearded-web/bearded/pkg/script",
-			"Rev": "44687954a6336282dda2ae104d508fc36f2fc092"
+			"Rev": "bce4ce549eecd13afd0464db12a21ca41dd556dc"
 		},
 		{
 			"ImportPath": "github.com/bearded-web/bearded/pkg/transport",
-			"Rev": "44687954a6336282dda2ae104d508fc36f2fc092"
+			"Rev": "bce4ce549eecd13afd0464db12a21ca41dd556dc"
 		},
 		{
 			"ImportPath": "github.com/bearded-web/bearded/pkg/utils",
-			"Rev": "44687954a6336282dda2ae104d508fc36f2fc092"
+			"Rev": "bce4ce549eecd13afd0464db12a21ca41dd556dc"
 		},
 		{
 			"ImportPath": "github.com/davecgh/go-spew/spew",

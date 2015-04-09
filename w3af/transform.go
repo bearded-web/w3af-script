@@ -1,6 +1,6 @@
 package w3af
 
-import "github.com/bearded-web/bearded/models/report"
+import "github.com/bearded-web/bearded/models/issue"
 
 // this constants from w3af/core/data/constants/severity.py
 const (
@@ -10,9 +10,9 @@ const (
 	SevHigh   = "High"
 )
 
-var SeverityMap = map[string]report.Severity{
-	SevInfo:   report.SeverityInfo,
-	SevLow:    report.SeverityLow,
-	SevMedium: report.SeverityMedium,
-	SevHigh:   report.SeverityHigh,
+var SeverityMap = map[string]issue.Severity{
+	SevInfo:   issue.SeverityInfo,
+	SevLow:    issue.SeverityLow,
+	SevMedium: issue.SeverityMedium,
+	SevHigh:   issue.SeverityHigh,
 }

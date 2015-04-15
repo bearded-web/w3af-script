@@ -3,9 +3,9 @@ package main
 // Temporary file
 
 import (
-	"code.google.com/p/go.net/context"
 	"github.com/bearded-web/bearded/pkg/script"
 	"github.com/davecgh/go-spew/spew"
+	"golang.org/x/net/context"
 
 	"github.com/bearded-web/bearded/pkg/transport/mango"
 	"github.com/bearded-web/w3af-script/w3af"

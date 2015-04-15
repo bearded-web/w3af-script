@@ -6,58 +6,53 @@
 	],
 	"Deps": [
 		{
-			"ImportPath": "code.google.com/p/go.net/context",
-			"Comment": "null-240",
-			"Rev": "937a34c9de13c766c814510f76bca091dee06028"
-		},
-		{
 			"ImportPath": "github.com/Sirupsen/logrus",
 			"Comment": "v0.6.4-16-g38a6ff9",
 			"Rev": "38a6ff9215d472ce953bb9aa37b5327715c0f940"
 		},
 		{
 			"ImportPath": "github.com/bearded-web/bearded/models/file",
-			"Rev": "bce4ce549eecd13afd0464db12a21ca41dd556dc"
+			"Rev": "d3e53ac2506cef3f95ef3e763b8074dfd7ae6dee"
 		},
 		{
 			"ImportPath": "github.com/bearded-web/bearded/models/issue",
-			"Rev": "bce4ce549eecd13afd0464db12a21ca41dd556dc"
+			"Rev": "d3e53ac2506cef3f95ef3e763b8074dfd7ae6dee"
 		},
 		{
 			"ImportPath": "github.com/bearded-web/bearded/models/plan",
-			"Rev": "bce4ce549eecd13afd0464db12a21ca41dd556dc"
+			"Rev": "d3e53ac2506cef3f95ef3e763b8074dfd7ae6dee"
 		},
 		{
 			"ImportPath": "github.com/bearded-web/bearded/models/report",
-			"Rev": "bce4ce549eecd13afd0464db12a21ca41dd556dc"
+			"Rev": "d3e53ac2506cef3f95ef3e763b8074dfd7ae6dee"
 		},
 		{
 			"ImportPath": "github.com/bearded-web/bearded/models/target",
-			"Rev": "bce4ce549eecd13afd0464db12a21ca41dd556dc"
+			"Rev": "d3e53ac2506cef3f95ef3e763b8074dfd7ae6dee"
 		},
 		{
 			"ImportPath": "github.com/bearded-web/bearded/models/tech",
-			"Rev": "bce4ce549eecd13afd0464db12a21ca41dd556dc"
+			"Rev": "d3e53ac2506cef3f95ef3e763b8074dfd7ae6dee"
 		},
 		{
 			"ImportPath": "github.com/bearded-web/bearded/pkg/agent/api",
-			"Rev": "bce4ce549eecd13afd0464db12a21ca41dd556dc"
+			"Rev": "d3e53ac2506cef3f95ef3e763b8074dfd7ae6dee"
 		},
 		{
 			"ImportPath": "github.com/bearded-web/bearded/pkg/pagination",
-			"Rev": "bce4ce549eecd13afd0464db12a21ca41dd556dc"
+			"Rev": "d3e53ac2506cef3f95ef3e763b8074dfd7ae6dee"
 		},
 		{
 			"ImportPath": "github.com/bearded-web/bearded/pkg/script",
-			"Rev": "bce4ce549eecd13afd0464db12a21ca41dd556dc"
+			"Rev": "d3e53ac2506cef3f95ef3e763b8074dfd7ae6dee"
 		},
 		{
 			"ImportPath": "github.com/bearded-web/bearded/pkg/transport",
-			"Rev": "bce4ce549eecd13afd0464db12a21ca41dd556dc"
+			"Rev": "d3e53ac2506cef3f95ef3e763b8074dfd7ae6dee"
 		},
 		{
 			"ImportPath": "github.com/bearded-web/bearded/pkg/utils",
-			"Rev": "bce4ce549eecd13afd0464db12a21ca41dd556dc"
+			"Rev": "d3e53ac2506cef3f95ef3e763b8074dfd7ae6dee"
 		},
 		{
 			"ImportPath": "github.com/davecgh/go-spew/spew",
@@ -79,6 +74,10 @@
 		{
 			"ImportPath": "github.com/satori/go.uuid",
 			"Rev": "46e1db27972f44c7722f23195ba6a8d2c2f3a0a3"
+		},
+		{
+			"ImportPath": "golang.org/x/net/context",
+			"Rev": "6460565bec1e8891e29ff478184c71b9e443ac36"
 		},
 		{
 			"ImportPath": "gopkg.in/mgo.v2/bson",

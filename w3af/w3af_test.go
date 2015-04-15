@@ -5,15 +5,15 @@ import (
 	"fmt"
 	"testing"
 
-	"code.google.com/p/go.net/context"
 	"github.com/bearded-web/bearded/models/file"
+	"github.com/bearded-web/bearded/models/issue"
 	"github.com/bearded-web/bearded/models/plan"
 	"github.com/bearded-web/bearded/models/report"
 	"github.com/bearded-web/bearded/pkg/script"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
-	"github.com/bearded-web/bearded/models/issue"
+	"golang.org/x/net/context"
 )
 
 type ClientMock struct {

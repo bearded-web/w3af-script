@@ -6,12 +6,12 @@ import (
 	"net/http"
 	"path/filepath"
 
-	"code.google.com/p/go.net/context"
+	"github.com/bearded-web/bearded/models/issue"
 	"github.com/bearded-web/bearded/models/plan"
 	"github.com/bearded-web/bearded/models/report"
-	"github.com/bearded-web/bearded/models/issue"
 	"github.com/bearded-web/bearded/pkg/script"
 	"github.com/facebookgo/stackerr"
+	"golang.org/x/net/context"
 )
 
 const (

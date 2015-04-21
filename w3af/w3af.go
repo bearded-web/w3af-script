@@ -157,6 +157,12 @@ func transformXmlReport(xmlRep *XmlReport) ([]*issue.Issue, error) {
 				Url: vuln.Url,
 			},
 		}
+		if len(vuln.LongDescription) > 0 {
+			issueObj.Desc += fmt.Sprintf("\n\n %s", vuln.LongDescription)
+		}
+		if len(vuln.FixGuidance) > 0 {
+			issueObj.Desc += fmt.Sprintf("\n\n###Fix guidance:\n %s", vuln.FixGuidance)
+		}
 		if len(vuln.References) > 0 {
 			for _, vulnRef := range vuln.References {
 				ref := &issue.Reference{Url: vulnRef.Url, Title: vulnRef.Title}

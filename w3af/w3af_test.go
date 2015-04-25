@@ -94,8 +94,8 @@ func TestW3afTransform(t *testing.T) {
 	require.NotNil(t, xmlReport)
 
 	issues, err := transformXmlReport(xmlReport)
-	data, err := json.Marshal(issues)
-	println(string(data))
+	//	data, err := json.Marshal(issues)
+	//	println(string(data))
 	require.NoError(t, err)
 	require.Len(t, issues, 23) // 21 vuln + 2 errors
 

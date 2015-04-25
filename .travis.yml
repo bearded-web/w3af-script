@@ -1,0 +1,12 @@
+language: go
+
+go:
+  - 1.4.2
+
+script:
+ - make travis
+
+notifications:
+  email: false
+  slack:
+    secure: qjC4VmY8jZHzsy9qkYDhva16OgOzNrlCyooUKl0PIyperFSOq8WIQLR+ZgUGicjoszfJVriKU7A53orMN9xplMziWbdX+aN5PUj425v1OhVzYopFMg/fz7qIRqxRbuEZJhN9GB4pHPaHApY7geGsRNwPK+g2etsfcd1Kf8SD0QM=

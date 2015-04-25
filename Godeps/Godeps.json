@@ -12,47 +12,47 @@
 		},
 		{
 			"ImportPath": "github.com/bearded-web/bearded/models/file",
-			"Rev": "d3e53ac2506cef3f95ef3e763b8074dfd7ae6dee"
+			"Rev": "3c90269cdfecf121d2771fd7e3ad9d37d42ea947"
 		},
 		{
 			"ImportPath": "github.com/bearded-web/bearded/models/issue",
-			"Rev": "d3e53ac2506cef3f95ef3e763b8074dfd7ae6dee"
+			"Rev": "3c90269cdfecf121d2771fd7e3ad9d37d42ea947"
 		},
 		{
 			"ImportPath": "github.com/bearded-web/bearded/models/plan",
-			"Rev": "d3e53ac2506cef3f95ef3e763b8074dfd7ae6dee"
+			"Rev": "3c90269cdfecf121d2771fd7e3ad9d37d42ea947"
 		},
 		{
 			"ImportPath": "github.com/bearded-web/bearded/models/report",
-			"Rev": "d3e53ac2506cef3f95ef3e763b8074dfd7ae6dee"
+			"Rev": "3c90269cdfecf121d2771fd7e3ad9d37d42ea947"
 		},
 		{
 			"ImportPath": "github.com/bearded-web/bearded/models/target",
-			"Rev": "d3e53ac2506cef3f95ef3e763b8074dfd7ae6dee"
+			"Rev": "3c90269cdfecf121d2771fd7e3ad9d37d42ea947"
 		},
 		{
 			"ImportPath": "github.com/bearded-web/bearded/models/tech",
-			"Rev": "d3e53ac2506cef3f95ef3e763b8074dfd7ae6dee"
+			"Rev": "3c90269cdfecf121d2771fd7e3ad9d37d42ea947"
 		},
 		{
 			"ImportPath": "github.com/bearded-web/bearded/pkg/agent/api",
-			"Rev": "d3e53ac2506cef3f95ef3e763b8074dfd7ae6dee"
+			"Rev": "3c90269cdfecf121d2771fd7e3ad9d37d42ea947"
 		},
 		{
 			"ImportPath": "github.com/bearded-web/bearded/pkg/pagination",
-			"Rev": "d3e53ac2506cef3f95ef3e763b8074dfd7ae6dee"
+			"Rev": "3c90269cdfecf121d2771fd7e3ad9d37d42ea947"
 		},
 		{
 			"ImportPath": "github.com/bearded-web/bearded/pkg/script",
-			"Rev": "d3e53ac2506cef3f95ef3e763b8074dfd7ae6dee"
+			"Rev": "3c90269cdfecf121d2771fd7e3ad9d37d42ea947"
 		},
 		{
 			"ImportPath": "github.com/bearded-web/bearded/pkg/transport",
-			"Rev": "d3e53ac2506cef3f95ef3e763b8074dfd7ae6dee"
+			"Rev": "3c90269cdfecf121d2771fd7e3ad9d37d42ea947"
 		},
 		{
 			"ImportPath": "github.com/bearded-web/bearded/pkg/utils",
-			"Rev": "d3e53ac2506cef3f95ef3e763b8074dfd7ae6dee"
+			"Rev": "3c90269cdfecf121d2771fd7e3ad9d37d42ea947"
 		},
 		{
 			"ImportPath": "github.com/davecgh/go-spew/spew",

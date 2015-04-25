@@ -1,10 +1,13 @@
 package w3af
 
 import (
+	"encoding/base64"
 	"encoding/json"
 	"fmt"
 	"net/http"
 	"path/filepath"
+	"strings"
+	"unicode/utf8"
 
 	"github.com/bearded-web/bearded/models/issue"
 	"github.com/bearded-web/bearded/models/plan"
@@ -178,9 +181,15 @@ func transformXmlReport(xmlRep *XmlReport) ([]*issue.Issue, error) {
 				}
 				if trans.Request != nil {
 					httpTran.Request = transformHttpEntity(trans.Request)
+					if _, requestUrl, _, ok := parseRequestLine(httpTran.Request.Status); ok {
+						httpTran.Url = requestUrl
+					}
 				}
 				if trans.Response != nil {
 					httpTran.Response = transformHttpEntity(trans.Response)
+				}
+				if len(vuln.Var) > 0 {
+					httpTran.Params = append(httpTran.Params, vuln.Var)
 				}
 				transactions = append(transactions, httpTran)
 			}
@@ -198,10 +207,31 @@ func transformHttpEntity(ent *HttpEntity) *issue.HttpEntity {
 		Header: http.Header{},
 	}
 	if ent.Body != nil {
-		// TODO (m0sth8): how to handle binary content??
+		contentEncoding := ent.Body.ContentEncoding
+		var body string
+		switch contentEncoding {
+		case "base64":
+			// decode base64 if it has valid utf-8 content
+			if utf8.Valid(ent.Body.Content) {
+				buf := make([]byte, base64.StdEncoding.DecodedLen(len(ent.Body.Content)))
+				if n, err := base64.StdEncoding.Decode(buf, ent.Body.Content); err != nil {
+					body = string(ent.Body.Content[:n])
+				} else {
+					body = string(buf)
+					contentEncoding = "text"
+				}
+			} else {
+				body = string(ent.Body.Content)
+			}
+		case "text":
+			body = string(ent.Body.Content)
+		default:
+			body = fmt.Sprintf("%s content encoding isn't supported yet", ent.Body.ContentEncoding)
+
+		}
 		out.Body = &issue.HttpBody{
-			ContentEncoding: ent.Body.ContentEncoding,
-			Content:         ent.Body.Content,
+			ContentEncoding: contentEncoding,
+			Content:         body,
 		}
 	}
 	if ent.Headers != nil && len(ent.Headers) > 0 {
@@ -210,4 +240,15 @@ func transformHttpEntity(ent *HttpEntity) *issue.HttpEntity {
 		}
 	}
 	return out
+}
+
+// parseRequestLine parses "GET /foo HTTP/1.1" into its three parts.
+func parseRequestLine(line string) (method, requestURI, proto string, ok bool) {
+	s1 := strings.Index(line, " ")
+	s2 := strings.Index(line[s1+1:], " ")
+	if s1 < 0 || s2 < 0 {
+		return
+	}
+	s2 += s1 + 1
+	return line[:s1], line[s1+1 : s2], line[s2+1:], true
 }
